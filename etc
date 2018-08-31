@@ -1,1 +1,6 @@
 http://172.20.1.32:8004/dev60cgi/rwcgi60?jsyb_cfg+report=BGR6403
+
+select	RV_HIGH_VALUE
+			from		sybfnd_ref_codes
+			where		rv_domain = 'REPORT SERVER SCM'
+				and		rv_low_value = p_servidor;
