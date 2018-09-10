@@ -1,0 +1,38 @@
+/* color celeste de fondo */
+body{
+	/*background-color: #b2d9ff !important;*/
+	background-color: #e1eb9c !important;
+}
+/* dimensiones y posición del logo
+falta saber sobre poner imagenes BIEN, mientras se deja así. */
+#logo{
+	width: 70%;
+	height: 35%;
+	margin-top: 20px;
+}
+#logorow{
+	margin-left: 0px;
+	margin-bottom: 5px
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+#master_row{
+	margin: auto;
+	min-height: 80px;
+}
+
+#fieldscol{
+	padding: 10px;
+	/*background-color: #1a8dff;*/
+	background-color: #c3d535;
+	color: white;
+}
+
+/* crea un margen en el row base que contiene todo */
+#baserow{
+	padding: 10px;
+}
+
+.titulo_pag{
+	color: #898a80;
+}

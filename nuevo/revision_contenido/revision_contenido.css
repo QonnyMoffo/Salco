@@ -1,0 +1,30 @@
+.col-9{
+	text-align: right;
+}
+#col_contexto{
+	border: black 2px;
+}
+
+/* agrega una pequeña distancia entre filas de label-input */
+#colx .row{
+	text-align: left;
+	margin-bottom: 10px;
+	align-items: left;
+}
+
+/* para alinear los label con sus inputs */
+input #form-control{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	display:inline-block;
+	vertical-align:middle;
+	margin-left:20px
+}
+
+label {
+	display:inline-block;
+	float: left;
+	padding-top: 5px;
+	text-align: left;
+	width: 140px;
+}

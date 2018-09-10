@@ -1,0 +1,256 @@
+{% extends 'base.html' %}
+(% # coding: utf8 %}
+
+{% block title %}
+    Revisión Conenido
+{% endblock %}
+
+{% block header %}
+	<link rel="stylesheet" type="text/css" href="{{ url_for('revision_contenido.static', filename='css/revision_contenido.css') }}">
+	<script type="text/javascript">
+		$SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+		function setModalAdvertencia(title, mensaje){
+			$("#modalAdvertenciaTitle").text(title);
+			$("#modalAdvertenciaMensaje").text(mensaje);
+			$("#modalAdvertencia").modal('show');
+		};
+		function validar_fecha(id,nomb){
+			var campo = document.getElementById(id).value;
+			var letra = "";
+			if (campo.length < 16) {
+				setModalAdvertencia("Error al Validar Fecha:","Mensaje: "+nomb+", NO Tiene el Formato Correcto: 'DD-MM-YYYY 24HH:Mi:SS'");
+				letra = nomb+": "+campo.length;
+			}
+			return letra;
+		};
+		function validar_texto(id,nomb){
+			var lista = ['a','A','b','B','c','C','d','D','e','E','f','F','g','G','h','H','i','I','j','J','k','K','l','L',
+			'm','M','n','N','o','O','p','P','q','Q','r','R','s','S','t','T','u','U','v','V','w','W','x','X','y','Y','z','Z',
+			'1','2','3','4','5','6','7','8','9','0','-','_','(',')','+','=',',',';','.',':','#',' ','\n'];
+			var campo = document.getElementById(id).value;
+			var letra = "";
+			for (x in campo) {
+				if(!(lista.indexOf(campo[x]) > -1)){
+					setModalAdvertencia("Error al Validar Texto:","Mensaje: "+nomb+", Tiene Caracteres NO Válidos: '"+campo[x]+"'");
+					letra = nomb+": "+campo[x];
+					break;
+				}
+			}
+			return letra;
+		};
+		
+		function ReiniciarFormulario(){
+			document.getElementById("InputSalida").value = "";
+			document.getElementById("InputBandeja").value = "";
+			document.getElementById("InputProducto").value = "";
+			document.getElementById("ReadCantidad").value = "";
+			document.getElementById("ReadDescripcion").value = "";
+			document.getElementById("InputComentario").value = "";
+			document.getElementById("InputSalida").readOnly = false;
+			document.getElementById("InputBandeja").readOnly = true;
+			document.getElementById("InputProducto").readOnly = true;
+			document.getElementById("InputComentario").readOnly = true;
+			document.getElementById("TermRevCont").disabled = true;
+		};
+		
+		$(function(){
+			$('#modalAdvertencia').modal({ show: false});
+			ReiniciarFormulario();
+			
+			if ({{contexto.cod_status}} == 0){
+				$("#InputSalida").focus();
+			}else if({{contexto.cod_status}} == 1){
+				document.getElementById("InputSalida").readOnly = true;
+				setModalAdvertencia("Error de Contexto:","Mensaje: {{contexto.msg_status}}\n(SE BLOQUEARÁN TODOS LOS CAMPOS)");
+			}else if({{contexto.cod_status}} == 3){
+				$("#InputSalida").focus();
+				setModalAdvertencia("Éxito de Contexto:","Mensaje: {{contexto.msg_status}}");
+			}else {
+				document.getElementById("InputSalida").readOnly = true;
+				setModalAdvertencia("Error de Contexto:","Mensaje: NO HAY DATOS DE VUELTA.\n(SE BLOQUEARÁN TODOS LOS CAMPOS)");
+			}
+			
+			$('#InputSalida').keypress(function(event) {
+				var keycode = (event.keyCode ? event.keyCode : event.which);
+				if (keycode == 13 & document.getElementById("InputSalida").value.length > 0) {
+					console.log($(this).val());
+					console.log($SCRIPT_ROOT);
+					$.getJSON($SCRIPT_ROOT + '/validasalida',{
+						nro_salida: $("#InputSalida").val()
+					},	function(data){
+						console.log(data);
+						if(data.cod_status == 1){
+							document.getElementById("InputSalida").value = "";
+							setModalAdvertencia("Error Al Validar Salida:","Mensaje: "+data.msg_status);
+						}else if(data.cod_status == 0){
+							document.getElementById("InputSalida").readOnly = true;
+							document.getElementById("InputBandeja").readOnly = false;
+						}else setModalAdvertencia("Error Al Validar Salida:","Mensaje: NO HAY DATOS DE VUELTA.");
+					});
+				}
+			});
+			
+			$('#InputBandeja').keypress(function(event) {
+				var keycode = (event.keyCode ? event.keyCode : event.which);
+				if (keycode == 13 & document.getElementById("InputBandeja").value.length > 0) {
+					console.log($(this).val());
+					console.log($SCRIPT_ROOT);
+					$.getJSON($SCRIPT_ROOT + '/validabandeja',{
+						nro_salida: $("#InputSalida").val(),
+						nro_bandeja: $("#InputBandeja").val()
+					},	function(data){
+						console.log(data);
+						if(data.cod_status == 1){
+							document.getElementById("InputBandeja").value = "";
+							setModalAdvertencia("Error Al Validar Bandeja:","Mensaje: "+data.msg_status);
+						}else if(data.cod_status == 0){
+							document.getElementById("InputBandeja").readOnly = true;
+							document.getElementById("InputProducto").readOnly = false;
+							document.getElementById("InputComentario").readOnly = false;
+						}else setModalAdvertencia("Error Al Validar Bandeja:","Mensaje: NO HAY DATOS DE VUELTA.");
+					});
+				}
+			});
+			
+			$('#InputProducto').keypress(function(event) {
+				var keycode = (event.keyCode ? event.keyCode : event.which);
+				if (keycode == 13 & document.getElementById("InputProducto").value.length > 0) {
+					console.log($(this).val());
+					console.log($SCRIPT_ROOT);
+					$.getJSON($SCRIPT_ROOT + '/registraproducto',{
+						nro_salida: $("#InputSalida").val(),
+						nro_bandeja: $("#InputBandeja").val(),
+						cod_ingresado: $("#InputProducto").val()
+					},	function(data){
+						console.log(data);
+						if(data.cod_status == 1){
+							document.getElementById("InputProducto").value = "";
+							document.getElementById("ReadCantidad").value = "";
+							document.getElementById("ReadDescripcion").value = "";
+							setModalAdvertencia("Error Al Registrar Producto:","Mensaje: "+data.msg_status);
+						}else if(data.cod_status == 0){
+							document.getElementById("InputProducto").value = "";
+							document.getElementById("InputComentario").readOnly = false;
+							document.getElementById("TermRevCont").disabled = false;
+							document.getElementById("ReadCantidad").value = data.cantidad;
+							document.getElementById("ReadDescripcion").value = data.descripcion;
+						}else setModalAdvertencia("Error Al Registrar Producto:","Mensaje: NO HAY DATOS DE VUELTA.");
+					});
+				}
+			});
+			
+			$('#TermRevCont').click(function(event) {
+				var texto = validar_texto("InputComentario", "Comentario Termino");
+				if (texto.length > 0) document.getElementById("InputComentario").value = "";
+				else{
+					if(confirm('Seguro Que Desea Continuar?')){
+						console.log($(this).val());
+						console.log($SCRIPT_ROOT);
+						$.getJSON($SCRIPT_ROOT + '/revisacontenido',{
+							nro_salida: $("#InputSalida").val(),
+							nro_bandeja: $("#InputBandeja").val(),
+							glosa: $("#InputComentario").val()
+						},	function(data){
+							console.log(data);
+							if(data.cod_status == 0){
+								document.getElementById("InputBandeja").value = "";
+								document.getElementById("InputProducto").value = "";
+								document.getElementById("ReadCantidad").value = "";
+								document.getElementById("ReadDescripcion").value = "";
+								document.getElementById("InputComentario").value = "";
+								document.getElementById("InputBandeja").readOnly = false;
+								document.getElementById("InputProducto").readOnly = true;
+								document.getElementById("InputComentario").readOnly = true;
+								document.getElementById("TermRevCont").disabled = true;
+							}else if(data.cod_status == 1){
+								setModalAdvertencia("Error Al Terminar Revision:","Mensaje: "+data.msg_status);
+							}else if(data.cod_status == 3){
+								ReiniciarFormulario();
+								setModalAdvertencia("Éxito Al Terminar Revision:","Mensaje: "+data.msg_status);
+							}else setModalAdvertencia("Error Al Terminar Revision:","Mensaje: NO HAY DATOS DE VUELTA.");
+						});
+					}
+				}
+			});
+		});
+	</script>
+{% endblock %}
+
+{% block screen_name %}
+	<h4 class="titulo_pag">Revisión de Contenido</h4>
+{% endblock %}
+
+{% block info_contexto %}
+	<div class="row">
+		<div class="col-3">Empresa:</div>
+		<div class="col-9" id="id_Empresa">{{contexto.Empresa}}</div>
+		<div class="col-3">Local:</div>
+		<div class="col-9" id="id_Local">{{contexto.Local}}</div>
+		<div class="col-3">Usuario:</div>
+		<div class="col-9" id="id_Usuario">{{contexto.Usuario}}</div>
+	</div>
+{% endblock %}
+
+{% block field_container %}
+	<!-- contenedor de campos -->
+    <div class="row" id="baserow">
+        <div class="col" id="fieldscol">
+            <div class="d-flex align-items-center justify-content-center h-100">
+                <div class="col" id="colx">
+					<div class="row" style="margin-top: 10px;">
+                        <div class="col-5">
+                            <label>Salida:</label>
+                        </div>
+                        <div class="col">
+                            <input type="number" class="form-control" id="InputSalida">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5">
+                            <label>Bandeja:</label>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="InputBandeja">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5">
+                            <label>Producto:</label>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="InputProducto">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5">
+                            <label style="margin:-15px 0">Cantidad /</br>Descripción:</label>
+                        </div>
+                        <div class="col">
+                            <input type="number" class="form-control" id="ReadCantidad" style="text-align: right;" readonly="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" id="ReadDescripcion" placeholder="" readonly="">
+                        </div>
+                    </div>
+					<div class="row">
+						<div class="col-5">
+							<label>Comentario Termino:</label>
+						</div>
+						<div class="col-7">
+							<textarea rows="2" cols="20" maxlength='240' class="form-control" id="InputComentario"></textarea>
+						</div>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <div class="row" style="margin-bottom:10px">
+        <div class="col">
+            <div class="center-block text-center">
+                <button type="" class="btn btn-info" style="float: right;" id="TermRevCont">Terminar</button>
+            </div>
+        </div>
+    </div>
+{% endblock %}
