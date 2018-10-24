@@ -3,14 +3,11 @@ Salida: 131615
 Local:  31
 */
 
---
---  RESET SALIDA
---
 declare
     vl_local number := 31;--914;
     vl_salida number := 131615;
 begin
-    jsyb_fnd_funciones.JSYB_FND_SET_EMPRESA( 1 );
+    JSYB_FND_FUNCIONES.Jsyb_Fnd_Set_Empresa( 1 );
     
     update  SALIDAS_DET_TL
     set     estado = 'GD'
