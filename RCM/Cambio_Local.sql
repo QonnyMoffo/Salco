@@ -1,7 +1,6 @@
 --
 --  Cambio de Local
 --
-
 declare
     par_salida number := 131615;
     par_local_nuevo number := 31;--914;

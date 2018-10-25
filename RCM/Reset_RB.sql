@@ -4,8 +4,20 @@
 declare
     vl_local number := 31;--914;
     vl_salida number := 131615;
+    vl_empresa number := 1;
+    vl_org_inv number := 228;
+    vl_org_loc number := 5;
+    vl_org_cd number := 2;
+    
+    vl_nro_doc number;
 begin
     JSYB_FND_FUNCIONES.Jsyb_Fnd_Set_Empresa( 1 );
+    
+    select  numero_interno into vl_nro_doc
+    from    DOCUMENTOS_ENC_TL
+    where   organization_id = vl_org_loc
+    and     numero_salida = vl_salida
+    and     lo_codigo = vl_local;
     
     update  SALIDAS_DET_TL
     set     estado = 'GD'
@@ -19,19 +31,23 @@ begin
     and     lo_codigo = vl_local;
     
     delete  JSYB_RCM_DETALLE_REVISION
-    where   numero_salida = vl_salida
+    where   codigo_empresa = vl_empresa
+    and     numero_salida = vl_salida
     and     lo_codigo = vl_local;
     
     delete  JSYB_RCM_REVISIONES_CONTENIDO
-    where   numero_salida = vl_salida
+    where   codigo_empresa = vl_empresa
+    and     numero_salida = vl_salida
     and     lo_codigo = vl_local;
     
     delete  JSYB_RCM_BANDEJAS
-    where   numero_salida = vl_salida
+    where   codigo_empresa = vl_empresa
+    and     numero_salida = vl_salida
     and     lo_codigo = vl_local;
     
     delete  JSYB_RCM_SALIDAS_PROC
-    where   numero_salida = vl_salida
+    where   codigo_empresa = vl_empresa
+    and     numero_salida = vl_salida
     and     lo_codigo = vl_local;
     
     delete  JSYB_BG_MOVS_BANDEJA
@@ -68,6 +84,19 @@ begin
     delete  JSYB_BG_VALE_RECEPCION_SALIDA
     where   numero_salida = vl_salida
     and     lo_codigo = vl_local;
+    
+    
+    delete  TRANSACCIONES_DOCUMENTO
+    where   organization_id = vl_org_loc
+    and     numero_interno = vl_nro_doc;
+    
+    delete  DOCUMENTOS_DET_TL
+    where   organization_id = vl_org_loc
+    and     numero_interno = vl_nro_doc;
+    
+    delete  DOCUMENTOS_ENC_TL
+    where   organization_id = vl_org_loc
+    and     numero_interno = vl_nro_doc;
     
     commit;
 end;

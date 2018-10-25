@@ -4,6 +4,10 @@
 declare
     vl_local number := 31;--914;
     vl_salida number := 131615;
+    vl_empresa number := 1;
+    vl_org_inv number := 228;
+    vl_org_loc number := 5;
+    vl_org_cd number := 2;
 begin
     JSYB_FND_FUNCIONES.Jsyb_Fnd_Set_Empresa( 1 );
     
@@ -44,7 +48,8 @@ begin
     
     update  JSYB_RCM_BANDEJAS
     set     estado = 'PREV'
-    where   numero_salida = vl_salida
+    where   codigo_empresa = vl_empresa
+    and     numero_salida = vl_salida
     and     lo_codigo = vl_local
     and     estado in ( 'ERC', 'REV' );
     
@@ -70,16 +75,19 @@ begin
             );
             
     delete  JSYB_RCM_DETALLE_REVISION
-    where   numero_salida = vl_salida
+    where   codigo_empresa = vl_empresa
+    and     numero_salida = vl_salida
     and     lo_codigo = vl_local;
     
     delete  JSYB_RCM_REVISIONES_CONTENIDO
-    where   numero_salida = vl_salida
+    where   codigo_empresa = vl_empresa
+    and     numero_salida = vl_salida
     and     lo_codigo = vl_local;
     
     update  JSYB_RCM_SALIDAS_PROC
     set     estado = 'RBC'
-    where   numero_salida = vl_salida
+    where   codigo_empresa = vl_empresa
+    and     numero_salida = vl_salida
     and     lo_codigo = vl_local;
     
     delete  DIFERENCIAS_ITEM_RECEPCION

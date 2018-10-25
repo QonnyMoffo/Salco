@@ -1,6 +1,21 @@
 exec jsyb_fnd_funciones.JSYB_FND_SET_EMPRESA( 1 );
 
 --
+--  CAMBIO DE LOCAL
+--
+select  * from JSYB_RCM_CONEXIONES;
+
+select  estado, ind_revision_rcm, codigo_bandeja, bdg_codigo,
+                        decode(ind_revision_rcm, 'S', 'PREV', 'DIS') estado_ban, numero, lo_codigo
+                from    BANDEJAS
+                where   numero = 131615
+                    and lo_codigo = 914;
+select  *
+from    salidas_det
+where   numero = 131615
+and     lo_codigo = :par_local_antiguo;
+
+--
 --  SUCURSAL, SALIDA y BANDEJAS
 --
 select  * from SU_SUCURSAL
@@ -64,22 +79,26 @@ where   ba_codigo_bandeja in (
 --
 select  *
 from    JSYB_RCM_SALIDAS_PROC
-where   numero_salida = 131615
+where   codigo_empresa = 1
+and     numero_salida = 131615
 and     lo_codigo = 31;
 
 select  *
 from    JSYB_RCM_BANDEJAS
-where   numero_salida = 131615
+where   codigo_empresa = 1
+and     numero_salida = 131615
 and     lo_codigo = 31;
 
 select  *
 from    JSYB_RCM_REVISIONES_CONTENIDO
-where   numero_salida = 131615
+where   codigo_empresa = 1
+and     numero_salida = 131615
 and     lo_codigo = 31;
 
 select  *
 from    JSYB_RCM_DETALLE_REVISION
-where   numero_salida = 131615
+where   codigo_empresa = 1
+and     numero_salida = 131615
 and     lo_codigo = 31;
 
 --
@@ -123,7 +142,8 @@ and     lo_codigo =  31;
 
 select  t1.barcode_number, t1.barcode_qty, t1.barcode_type, t3.codigo_bandeja_pub, t2.*
 from    SYB_ITEM_BARCODES t1, DETALLE_X_BANDEJAS t2, JSYB_RCM_BANDEJAS t3
-where   t3.numero_salida = 131615
+where   t3.codigo_empresa = 1
+    and t3.numero_salida = 131615
     and t3.lo_codigo = 31
     and t3.estado in ( 'PREV', 'ERC', 'REV' )
     and t1.organization_id = 228
