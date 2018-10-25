@@ -1,8 +1,6 @@
-/*
-Salida: 131615
-Local:  31
-*/
-
+--
+--  Reset RB
+--
 declare
     vl_local number := 31;--914;
     vl_salida number := 131615;
@@ -45,7 +43,7 @@ begin
             );
     
     update  DETALLE_X_BANDEJAS
-        set estado_traspaso_pp = NULL,
+    set     estado_traspaso_pp = NULL,
             estado_traspaso_pt = NULL,
             estado_traspaso_td = NULL
     where   codigo_bandeja in (

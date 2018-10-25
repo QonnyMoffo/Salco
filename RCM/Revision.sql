@@ -1,12 +1,8 @@
 exec jsyb_fnd_funciones.JSYB_FND_SET_EMPRESA( 1 );
 
-
-
-
 --
 --  SUCURSAL, SALIDA y BANDEJAS
 --
-
 select  * from SU_SUCURSAL
 where   su_suc_id = 31;
 
@@ -24,7 +20,9 @@ from    BANDEJAS b
 where   b.numero = 131615
 and     b.lo_codigo =  31;
 
---  Costo Bandejas
+--
+--  COSTO BANDEJAS
+--
 select  b.bdg_codigo, b.codigo_bandeja_pub, b.estado, b.ind_revision_rcm, b.codigo_bandeja, count(*), sum( round( bodega_pkg_01.get_pmp( 228,  d.inventory_item_id ), 0 ) ) costo_ban
 from    BANDEJAS b, DETALLE_X_BANDEJAS d
 where   b.numero = 131615
@@ -62,9 +60,8 @@ where   ba_codigo_bandeja in (
         );
 
 --
---  RECEPCION CIEGA MOBILE
+--  RECEPCION CIEGA MÓVIL
 --
-
 select  *
 from    JSYB_RCM_SALIDAS_PROC
 where   numero_salida = 131615
@@ -88,7 +85,6 @@ and     lo_codigo = 31;
 --
 --  TRENCITO
 --
-
 select  *
 from    JSYB_BG_MOVS_BANDEJA
 where   codigo_bandeja in (
@@ -106,7 +102,6 @@ where     transaction_date > sysdate - 3/(24*60);
 --
 --  VALE
 --
-
 select  *
 from    JSYB_BG_VALE_RECEPCION_SALIDA
 where   numero_salida = 131615

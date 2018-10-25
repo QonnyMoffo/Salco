@@ -1,8 +1,6 @@
-/*
-Salida: 131615
-Local:  31
-*/
-
+--
+--  Reset RC
+--
 declare
     vl_local number := 31;--914;
     vl_salida number := 131615;
@@ -33,7 +31,7 @@ begin
             );
     
     update  DETALLE_X_BANDEJAS
-        set estado_traspaso_pp = NULL,
+    set     estado_traspaso_pp = NULL,
             estado_traspaso_pt = NULL,
             estado_traspaso_td = NULL
     where   codigo_bandeja in (
@@ -45,7 +43,7 @@ begin
             );
     
     update  JSYB_RCM_BANDEJAS
-        set estado = 'PREV'
+    set     estado = 'PREV'
     where   numero_salida = vl_salida
     and     lo_codigo = vl_local
     and     estado in ( 'ERC', 'REV' );
@@ -60,7 +58,7 @@ begin
             );
     
     update  DETALLE_X_BANDEJAS
-        set estado_traspaso_pp = null,
+    set     estado_traspaso_pp = null,
             estado_traspaso_pt = null,
             estado_traspaso_td = null
     where   codigo_bandeja in (
