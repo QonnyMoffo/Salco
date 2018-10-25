@@ -7,34 +7,33 @@ exec jsyb_fnd_funciones.JSYB_FND_SET_EMPRESA( 1 );
 --  SUCURSAL, SALIDA y BANDEJAS
 --
 
-select  * from su_sucursal
+select  * from SU_SUCURSAL
 where   su_suc_id = 31;
 
 select  *
-from    salidas_enc_tl
+from    SALIDAS_ENC_TL
 where   numero = 131615;
 
 select  a.estado, a.bdg_codigo, a.*
-from    salidas_det_tl a
+from    SALIDAS_DET_TL a
 where   numero = 131615
 and     lo_codigo = 31;
 
-select  b.bdg_codigo, b.codigo_bandeja_pub, b.estado, b.IND_REVISION_RCM, b.*
-from    bandejas b
+select  b.bdg_codigo, b.codigo_bandeja_pub, b.estado, b.ind_revision_rcm, b.*
+from    BANDEJAS b
 where   b.numero = 131615
-and     b.lo_codigo = 31;
+and     b.lo_codigo =  31;
 
 --  Costo Bandejas
-select  b.bdg_codigo, b.codigo_bandeja_pub, b.estado, b.IND_REVISION_RCM, b.codigo_bandeja, count(*), sum( round( bodega_pkg_01.get_pmp( 228,  d.inventory_item_id ), 0 ) ) costo_ban
-from    bandejas b,
-        detalle_x_bandejas d
+select  b.bdg_codigo, b.codigo_bandeja_pub, b.estado, b.ind_revision_rcm, b.codigo_bandeja, count(*), sum( round( bodega_pkg_01.get_pmp( 228,  d.inventory_item_id ), 0 ) ) costo_ban
+from    BANDEJAS b, DETALLE_X_BANDEJAS d
 where   b.numero = 131615
-and     b.lo_codigo = 31
+and     b.lo_codigo =  31
 and     d.codigo_bandeja = b.codigo_bandeja
-group by b.bdg_codigo, b.codigo_bandeja_pub, b.estado, b.IND_REVISION_RCM, b.codigo_bandeja;
+group by b.bdg_codigo, b.codigo_bandeja_pub, b.estado, b.ind_revision_rcm, b.codigo_bandeja;
 
 select  round( bodega_pkg_01.get_pmp( 228,  d.inventory_item_id ), 0 ) costo_prod, d.*
-from    detalle_x_bandejas d
+from    DETALLE_X_BANDEJAS d
 where   codigo_bandeja in (
             select  b.codigo_bandeja
             from    bandejas b
@@ -44,7 +43,7 @@ where   codigo_bandeja in (
 order by codigo_bandeja;
 
 select  *
-from    detalle_bandejas_x_lote
+from    DETALLE_BANDEJAS_X_LOTE
 where   codigo_bandeja in (
             select  b.codigo_bandeja
             from    bandejas b
@@ -54,7 +53,7 @@ where   codigo_bandeja in (
 order by codigo_bandeja;
 
 select  *
-from    diferencias_item_recepcion
+from    DIFERENCIAS_ITEM_RECEPCION
 where   ba_codigo_bandeja in (
             select  b.codigo_bandeja
             from    bandejas b
@@ -67,22 +66,22 @@ where   ba_codigo_bandeja in (
 --
 
 select  *
-from    jsyb_rcm_salidas_proc
+from    JSYB_RCM_SALIDAS_PROC
 where   numero_salida = 131615
 and     lo_codigo = 31;
 
 select  *
-from    jsyb_rcm_bandejas
+from    JSYB_RCM_BANDEJAS
 where   numero_salida = 131615
 and     lo_codigo = 31;
 
 select  *
-from    jsyb_rcm_revisiones_contenido
+from    JSYB_RCM_REVISIONES_CONTENIDO
 where   numero_salida = 131615
 and     lo_codigo = 31;
 
 select  *
-from    jsyb_rcm_detalle_revision
+from    JSYB_RCM_DETALLE_REVISION
 where   numero_salida = 131615
 and     lo_codigo = 31;
 
@@ -91,7 +90,7 @@ and     lo_codigo = 31;
 --
 
 select  *
-from    jsyb_bg_movs_bandeja
+from    JSYB_BG_MOVS_BANDEJA
 where   codigo_bandeja in (
             select  b.codigo_bandeja
             from    bandejas b
@@ -100,7 +99,7 @@ where   codigo_bandeja in (
         );
 
 select  *
-from    jsyb_bg_transacc_inventario
+from    JSYB_BG_TRANSACC_INVENTARIO
 --where   source_header_id = 777768848624
 where     transaction_date > sysdate - 3/(24*60);
 
@@ -109,26 +108,26 @@ where     transaction_date > sysdate - 3/(24*60);
 --
 
 select  *
-from    jsyb_bg_vale_recepcion_salida
+from    JSYB_BG_VALE_RECEPCION_SALIDA
 where   numero_salida = 131615
 and     lo_codigo = 31;
 
 select  *
-from    jsyb_bg_bultos_vale_recep
-where   NUMERO_VALE_RECEP in (
-            select  v.NUMERO_VALE_RECEP
-            from    jsyb_bg_vale_recepcion_salida v
+from    JSYB_BG_BULTOS_VALE_RECEP
+where   numero_vale_recep in (
+            select  v.numero_vale_recep
+            from    JSYB_BG_VALE_RECEPCION_SALIDA v
             where   numero_salida = 131615
             and     lo_codigo = 31
         );
 
 select  *
-from    jsyb_bg_otr_bod_vale_recep
+from    JSYB_BG_OTR_BOD_VALE_RECEP
 where   numero_salida = 131615
-and     lo_codigo = 31;
+and     lo_codigo =  31;
 
 select  t1.barcode_number, t1.barcode_qty, t1.barcode_type, t3.codigo_bandeja_pub, t2.*
-from    syb_item_barcodes t1, detalle_x_bandejas t2, jsyb_rcm_bandejas t3
+from    SYB_ITEM_BARCODES t1, DETALLE_X_BANDEJAS t2, JSYB_RCM_BANDEJAS t3
 where   t3.numero_salida = 131615
     and t3.lo_codigo = 31
     and t3.estado in ( 'PREV', 'ERC', 'REV' )

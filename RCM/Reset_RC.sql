@@ -1,91 +1,96 @@
-exec jsyb_fnd_funciones.JSYB_FND_SET_EMPRESA( 1 );
-
 /*
 Salida: 131615
 Local:  31
 */
 
-update  salidas_det_tl s
-set     estado = 'GD'
-where   numero = 131615
-and     lo_codigo = 31
-and     exists (
-            select  'x'
-            from    bandejas b, jsyb_rcm_revisiones_contenido r
-            where   b.numero = s.numero
-            and     b.lo_codigo = s.lo_codigo
-            and     b.bdg_codigo = s.bdg_codigo
-            and     r.codigo_bandeja = b.codigo_bandeja
-        );
-
-update  bandejas b
-set     estado = 'TR'
-where   numero = 131615
-and     lo_codigo = 31
-and     exists (
-            select  'x'
-            from    jsyb_rcm_revisiones_contenido r
-            where   r.codigo_bandeja = b.codigo_bandeja
-        );
-
-update  detalle_x_bandejas
-    set ESTADO_TRASPASO_PP = null,
-        ESTADO_TRASPASO_PT = null,
-        ESTADO_TRASPASO_TD = null
-where   codigo_bandeja in (
-            select  b.codigo_bandeja
-            from    bandejas b, jsyb_rcm_revisiones_contenido r
-            where   b.numero = 131615
-            and     b.lo_codigo = 31
-            and     r.codigo_bandeja = b.codigo_bandeja
-        );
-
-update  jsyb_rcm_bandejas
-    set estado = 'PREV'
-where   numero_salida = 131615
-and     lo_codigo = 31
-and     estado in ( 'ERC', 'REV' );
-
-delete  jsyb_bg_movs_bandeja s
-where   codigo_bandeja in (
-            select  b.codigo_bandeja
-            from    bandejas b, jsyb_rcm_revisiones_contenido r
-            where   b.numero = 131615
-            and     b.lo_codigo = 31
-            and     r.codigo_bandeja = b.codigo_bandeja
-        );
-
-update  detalle_x_bandejas
-    set ESTADO_TRASPASO_PP = null,
-        ESTADO_TRASPASO_PT = null,
-        ESTADO_TRASPASO_TD = null
-where   codigo_bandeja in (
-            select  b.codigo_bandeja
-            from    bandejas b, jsyb_rcm_revisiones_contenido r
-            where   b.numero = 131615
-            and     b.lo_codigo = 31
-            and     r.codigo_bandeja = b.codigo_bandeja
-        );
-        
-delete  jsyb_rcm_detalle_revision
-where   numero_salida = 131615
-and     lo_codigo = 31;
-
-delete  jsyb_rcm_revisiones_contenido
-where   numero_salida = 131615
-and     lo_codigo = 31;
-
-update  jsyb_rcm_salidas_proc
-set     estado = 'RBC'
-where   numero_salida = 131615
-and     lo_codigo = 31;
-
-delete  diferencias_item_recepcion
-where   ba_codigo_bandeja in (
-            select  b.codigo_bandeja
-            from    bandejas b
-            where   numero = 131615
-            and     lo_codigo = 31
-        );
-
-commit;
+declare
+    vl_local number := 31;--914;
+    vl_salida number := 131615;
+begin
+    JSYB_FND_FUNCIONES.Jsyb_Fnd_Set_Empresa( 1 );
+    
+    update  SALIDAS_DET_TL s
+    set     estado = 'GD'
+    where   numero = vl_salida
+    and     lo_codigo = vl_local
+    and     exists (
+                select  'x'
+                from    BANDEJAS b, JSYB_RCM_REVISIONES_CONTENIDO r
+                where   b.numero = s.numero
+                and     b.lo_codigo = s.lo_codigo
+                and     b.bdg_codigo = s.bdg_codigo
+                and     r.codigo_bandeja = b.codigo_bandeja
+            );
+    
+    update  BANDEJAS b
+    set     estado = 'TR'
+    where   numero = vl_salida
+    and     lo_codigo = vl_local
+    and     exists (
+                select  'x'
+                from    JSYB_RCM_REVISIONES_CONTENIDO r
+                where   r.codigo_bandeja = b.codigo_bandeja
+            );
+    
+    update  DETALLE_X_BANDEJAS
+        set estado_traspaso_pp = NULL,
+            estado_traspaso_pt = NULL,
+            estado_traspaso_td = NULL
+    where   codigo_bandeja in (
+                select  b.codigo_bandeja
+                from    BANDEJAS b, JSYB_RCM_REVISIONES_CONTENIDO r
+                where   b.numero = vl_salida
+                and     b.lo_codigo = vl_local
+                and     r.codigo_bandeja = b.codigo_bandeja
+            );
+    
+    update  JSYB_RCM_BANDEJAS
+        set estado = 'PREV'
+    where   numero_salida = vl_salida
+    and     lo_codigo = vl_local
+    and     estado in ( 'ERC', 'REV' );
+    
+    delete  JSYB_BG_MOVS_BANDEJA s
+    where   codigo_bandeja in (
+                select  b.codigo_bandeja
+                from    BANDEJAS b, JSYB_RCM_REVISIONES_CONTENIDO r
+                where   b.numero = vl_salida
+                and     b.lo_codigo = vl_local
+                and     r.codigo_bandeja = b.codigo_bandeja
+            );
+    
+    update  DETALLE_X_BANDEJAS
+        set estado_traspaso_pp = null,
+            estado_traspaso_pt = null,
+            estado_traspaso_td = null
+    where   codigo_bandeja in (
+                select  b.codigo_bandeja
+                from    BANDEJAS b, JSYB_RCM_REVISIONES_CONTENIDO r
+                where   b.numero = vl_salida
+                and     b.lo_codigo = vl_local
+                and     r.codigo_bandeja = b.codigo_bandeja
+            );
+            
+    delete  JSYB_RCM_DETALLE_REVISION
+    where   numero_salida = vl_salida
+    and     lo_codigo = vl_local;
+    
+    delete  JSYB_RCM_REVISIONES_CONTENIDO
+    where   numero_salida = vl_salida
+    and     lo_codigo = vl_local;
+    
+    update  JSYB_RCM_SALIDAS_PROC
+    set     estado = 'RBC'
+    where   numero_salida = vl_salida
+    and     lo_codigo = vl_local;
+    
+    delete  DIFERENCIAS_ITEM_RECEPCION
+    where   ba_codigo_bandeja in (
+                select  b.codigo_bandeja
+                from    BANDEJAS b
+                where   numero = vl_salida
+                and     lo_codigo = vl_local
+            );
+    
+    commit;
+end;
