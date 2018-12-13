@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableProxyOraclev10g" name="JSYB_BG_MEMO_DEVOLUCION_TL" directorySegmentName="seg_0" id="FCC33DE3-C2D5-6FBA-F1B1-4C25E7CFE986">
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-12 23:45:48 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+<schemaObject>1BFD44C5-87D9-79C1-586D-D17460850C8D</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>5C1D69C2-E532-33A3-34C7-4079354057E4</segment>
+<tableSpace>4FEF9636-20CE-E9CC-FE35-46D3C1E84D12</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="IND_SIN_CRONOGRAMA" id="2465F304-AF05-FFFB-3AE8-694B75B7A246">
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-12 23:45:48 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="REASON_ID" id="25B0F7A4-1B2D-9A2B-5089-F12F95E2745E">
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-12 23:45:48 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MOTIVO" id="284279D7-710E-09A7-F879-667A048C8B12">
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-12 23:53:32 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DESCRIPCION" id="29A99D60-BC36-53C2-D849-0940410FC68B">
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-12 23:45:48 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CODIGO_EMPRESA" id="2E3E6C4D-F690-E462-5FDA-70646630745C">
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-12 23:45:48 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LISTA_LOCALES" id="526FF537-1944-8A64-A221-316E87D2B030">
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-12 23:45:48 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DESDE" id="8C249BFE-6C2F-FB5B-D417-6CCACEABF720">
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-12 23:45:48 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NUM_MEMO" id="C2A4616D-0B5F-5EEE-3999-921E09D555B9">
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-12 23:45:48 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SOLICITUD_ID" id="C3E36898-75DB-80A9-7989-BC2FEE5F6150">
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-13 13:59:47 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="HASTA" id="C4CEDFE4-EB15-0771-1722-FFA9C9325EBD">
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-12 23:45:48 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="JSYB_BG_SOL_MEMO_DEVOL_FK" id="4651D2FF-86F5-FFFD-7B78-DD7B0E35EF80">
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-13 14:19:14 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="JSYB_MEMO_DEVOLUCION_PK" id="8A384149-4E4C-BD6E-6537-EB3030A97B98">
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-12 23:45:48 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+<logging>NO</logging>
+<segment>F42BE279-6479-659B-1343-89CD43FA76A6</segment>
+<tableSpace>79623659-BA52-8B15-199D-34927C8F780C</tableSpace>
+<indexSegment>F42BE279-6479-659B-1343-89CD43FA76A6</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev10g>

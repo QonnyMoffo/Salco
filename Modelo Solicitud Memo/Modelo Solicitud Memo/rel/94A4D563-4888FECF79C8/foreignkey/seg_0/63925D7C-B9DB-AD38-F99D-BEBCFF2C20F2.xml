@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="63925D7C-B9DB-AD38-F99D-BEBCFF2C20F2" containerWithKeyObject="01CF1165-409F-7BCF-C460-3B3A6E089AFA" localFKIndex="EF50D95D-F36C-7B75-22D1-643113FF634F" name="JSYB_BG_ENC_DET_SOLICITUD_MEMO_FK">
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-13 13:58:23 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+<referredTableLongName>BODEGA.JSYB_BG_SOLICITUD_MEMO_TL</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>BF83EA5C-AFFF-3115-C7B2-2533FC3006BC</referredTableID>
+<keyObject>9C04A1E6-1886-C383-643E-7D7A83DB8EC8</keyObject>
+<referredKeyID>9C04A1E6-1886-C383-643E-7D7A83DB8EC8</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>SOLICITUD_ID,CODIGO_EMPRESA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

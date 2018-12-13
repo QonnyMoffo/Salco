@@ -1,0 +1,472 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1B5A3D11-2D13-3296-FC04-6752F9F74CD5" schemaObject="718E6C39-45FD-2C13-6181-D54C121AFDF3" name="VML_MTL_TRANSACTION_REASONS">
+<sourceConnName>sybinter_desaerp4</sourceConnName>
+<sourceObjSchema>SYBINTER</sourceObjSchema>
+<sourceObjName>VML_MTL_TRANSACTION_REASONS</sourceObjName>
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-12 23:59:01 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+<typeID>4</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<materializedQueryTable>true</materializedQueryTable>
+<parsed>true</parsed>
+<userDefinedSQL>SELECT &quot;MTL_TRANSACTION_REASONS&quot;.&quot;REASON_ID&quot; &quot;REASON_ID&quot;,&lt;br/&gt;  &quot;MTL_TRANSACTION_REASONS&quot;.&quot;LAST_UPDATE_DATE&quot; &quot;LAST_UPDATE_DATE&quot;,&lt;br/&gt;  &quot;MTL_TRANSACTION_REASONS&quot;.&quot;LAST_UPDATED_BY&quot; &quot;LAST_UPDATED_BY&quot;,&lt;br/&gt;  &quot;MTL_TRANSACTION_REASONS&quot;.&quot;CREATION_DATE&quot; &quot;CREATION_DATE&quot;,&lt;br/&gt;  &quot;MTL_TRANSACTION_REASONS&quot;.&quot;CREATED_BY&quot; &quot;CREATED_BY&quot;,&lt;br/&gt;  &quot;MTL_TRANSACTION_REASONS&quot;.&quot;LAST_UPDATE_LOGIN&quot; &quot;LAST_UPDATE_LOGIN&quot;,&lt;br/&gt;  &quot;MTL_TRANSACTION_REASONS&quot;.&quot;REASON_NAME&quot; &quot;REASON_NAME&quot;,&lt;br/&gt;  &quot;MTL_TRANSACTION_REASONS&quot;.&quot;DESCRIPTION&quot; &quot;DESCRIPTION&quot;,&lt;br/&gt;  &quot;MTL_TRANSACTION_REASONS&quot;.&quot;DISABLE_DATE&quot; &quot;DISABLE_DATE&quot;,&lt;br/&gt;  &quot;MTL_TRANSACTION_REASONS&quot;.&quot;ATTRIBUTE1&quot; &quot;ATTRIBUTE1&quot;,&lt;br/&gt;  &quot;MTL_TRANSACTION_REASONS&quot;.&quot;ATTRIBUTE2&quot; &quot;ATTRIBUTE2&quot;,&lt;br/&gt;  &quot;MTL_TRANSACTION_REASONS&quot;.&quot;ATTRIBUTE3&quot; &quot;ATTRIBUTE3&quot;,&lt;br/&gt;  &quot;MTL_TRANSACTION_REASONS&quot;.&quot;ATTRIBUTE4&quot; &quot;ATTRIBUTE4&quot;,&lt;br/&gt;  &quot;MTL_TRANSACTION_REASONS&quot;.&quot;ATTRIBUTE5&quot; &quot;ATTRIBUTE5&quot;,&lt;br/&gt;  &quot;MTL_TRANSACTION_REASONS&quot;.&quot;ATTRIBUTE6&quot; &quot;ATTRIBUTE6&quot;,&lt;br/&gt;  &quot;MTL_TRANSACTION_REASONS&quot;.&quot;ATTRIBUTE7&quot; &quot;ATTRIBUTE7&quot;,&lt;br/&gt;  &quot;MTL_TRANSACTION_REASONS&quot;.&quot;ATTRIBUTE8&quot; &quot;ATTRIBUTE8&quot;,&lt;br/&gt;  &quot;MTL_TRANSACTION_REASONS&quot;.&quot;ATTRIBUTE9&quot; &quot;ATTRIBUTE9&quot;,&lt;br/&gt;  &quot;MTL_TRANSACTION_REASONS&quot;.&quot;ATTRIBUTE10&quot; &quot;ATTRIBUTE10&quot;,&lt;br/&gt;  &quot;MTL_TRANSACTION_REASONS&quot;.&quot;ATTRIBUTE11&quot; &quot;ATTRIBUTE11&quot;,&lt;br/&gt;  &quot;MTL_TRANSACTION_REASONS&quot;.&quot;ATTRIBUTE12&quot; &quot;ATTRIBUTE12&quot;,&lt;br/&gt;  &quot;MTL_TRANSACTION_REASONS&quot;.&quot;ATTRIBUTE13&quot; &quot;ATTRIBUTE13&quot;,&lt;br/&gt;  &quot;MTL_TRANSACTION_REASONS&quot;.&quot;ATTRIBUTE14&quot; &quot;ATTRIBUTE14&quot;,&lt;br/&gt;  &quot;MTL_TRANSACTION_REASONS&quot;.&quot;ATTRIBUTE15&quot; &quot;ATTRIBUTE15&quot;,&lt;br/&gt;  &quot;MTL_TRANSACTION_REASONS&quot;.&quot;ATTRIBUTE_CATEGORY&quot; &quot;ATTRIBUTE_CATEGORY&quot;,&lt;br/&gt;  &quot;MTL_TRANSACTION_REASONS&quot;.&quot;WORKFLOW_NAME&quot; &quot;WORKFLOW_NAME&quot;,&lt;br/&gt;  &quot;MTL_TRANSACTION_REASONS&quot;.&quot;WORKFLOW_DISPLAY_NAME&quot; &quot;WORKFLOW_DISPLAY_NAME&quot;,&lt;br/&gt;  &quot;MTL_TRANSACTION_REASONS&quot;.&quot;WORKFLOW_PROCESS&quot; &quot;WORKFLOW_PROCESS&quot;,&lt;br/&gt;  &quot;MTL_TRANSACTION_REASONS&quot;.&quot;WORKFLOW_DISPLAY_PROCESS&quot; &quot;WORKFLOW_DISPLAY_PROCESS&quot;,&lt;br/&gt;  &quot;MTL_TRANSACTION_REASONS&quot;.&quot;REASON_TYPE&quot; &quot;REASON_TYPE&quot;,&lt;br/&gt;  &quot;MTL_TRANSACTION_REASONS&quot;.&quot;REASON_TYPE_DISPLAY&quot; &quot;REASON_TYPE_DISPLAY&quot;&lt;br/&gt;FROM &quot;MTL_TRANSACTION_REASONS&quot;@PROD_INV.DOMC001.CL &quot;MTL_TRANSACTION_REASONS&quot;</userDefinedSQL>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="REASON_ID" id="6A0F71C5-6F12-DD87-8EF0-DCF81B669E74">
+<sourceConnName>sybinter_desaerp4</sourceConnName>
+<sourceObjSchema>VML_MTL_TRANSACTION_REASONS</sourceObjSchema>
+<sourceObjName>REASON_ID</sourceObjName>
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-12 23:59:01 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LAST_UPDATE_DATE" id="6033AE95-37CE-1A13-CEF7-DEC4BD21E370">
+<sourceConnName>sybinter_desaerp4</sourceConnName>
+<sourceObjSchema>VML_MTL_TRANSACTION_REASONS</sourceObjSchema>
+<sourceObjName>LAST_UPDATE_DATE</sourceObjName>
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-12 23:59:01 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LAST_UPDATED_BY" id="D1342386-06A9-0613-A886-BE6D974ACC79">
+<sourceConnName>sybinter_desaerp4</sourceConnName>
+<sourceObjSchema>VML_MTL_TRANSACTION_REASONS</sourceObjSchema>
+<sourceObjName>LAST_UPDATED_BY</sourceObjName>
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-12 23:59:01 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATION_DATE" id="0698507A-24EC-D37A-9030-458B8DE53F4E">
+<sourceConnName>sybinter_desaerp4</sourceConnName>
+<sourceObjSchema>VML_MTL_TRANSACTION_REASONS</sourceObjSchema>
+<sourceObjName>CREATION_DATE</sourceObjName>
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-12 23:59:01 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATED_BY" id="F95B4F2F-13B0-E2C8-4917-5EA9989F6B0A">
+<sourceConnName>sybinter_desaerp4</sourceConnName>
+<sourceObjSchema>VML_MTL_TRANSACTION_REASONS</sourceObjSchema>
+<sourceObjName>CREATED_BY</sourceObjName>
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-12 23:59:01 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LAST_UPDATE_LOGIN" id="D4A65684-90A4-0F1D-9896-BC42F4FAC671">
+<sourceConnName>sybinter_desaerp4</sourceConnName>
+<sourceObjSchema>VML_MTL_TRANSACTION_REASONS</sourceObjSchema>
+<sourceObjName>LAST_UPDATE_LOGIN</sourceObjName>
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-12 23:59:01 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REASON_NAME" id="41963776-018F-19A4-9949-69ED6BEECA4E">
+<sourceConnName>sybinter_desaerp4</sourceConnName>
+<sourceObjSchema>VML_MTL_TRANSACTION_REASONS</sourceObjSchema>
+<sourceObjName>REASON_NAME</sourceObjName>
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-12 23:59:01 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPTION" id="7DD46390-0C27-1387-5CAE-65D0A80663C0">
+<sourceConnName>sybinter_desaerp4</sourceConnName>
+<sourceObjSchema>VML_MTL_TRANSACTION_REASONS</sourceObjSchema>
+<sourceObjName>DESCRIPTION</sourceObjName>
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-12 23:59:01 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>240 BYTE</dataTypeSize>
+<ownDataTypeParameters>240 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DISABLE_DATE" id="727217B8-8F9A-E1CE-3AFB-D71D16BCFDA4">
+<sourceConnName>sybinter_desaerp4</sourceConnName>
+<sourceObjSchema>VML_MTL_TRANSACTION_REASONS</sourceObjSchema>
+<sourceObjName>DISABLE_DATE</sourceObjName>
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-12 23:59:01 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ATTRIBUTE1" id="2F17E4F5-D664-FF09-99EC-B9F5223BC851">
+<sourceConnName>sybinter_desaerp4</sourceConnName>
+<sourceObjSchema>VML_MTL_TRANSACTION_REASONS</sourceObjSchema>
+<sourceObjName>ATTRIBUTE1</sourceObjName>
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-12 23:59:01 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 BYTE</dataTypeSize>
+<ownDataTypeParameters>150 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ATTRIBUTE2" id="7035C68A-E5CE-2810-09E8-03288C1416B8">
+<sourceConnName>sybinter_desaerp4</sourceConnName>
+<sourceObjSchema>VML_MTL_TRANSACTION_REASONS</sourceObjSchema>
+<sourceObjName>ATTRIBUTE2</sourceObjName>
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-12 23:59:01 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 BYTE</dataTypeSize>
+<ownDataTypeParameters>150 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ATTRIBUTE3" id="4502CFF8-CDB3-C95D-B193-658A4CCD7386">
+<sourceConnName>sybinter_desaerp4</sourceConnName>
+<sourceObjSchema>VML_MTL_TRANSACTION_REASONS</sourceObjSchema>
+<sourceObjName>ATTRIBUTE3</sourceObjName>
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-12 23:59:01 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 BYTE</dataTypeSize>
+<ownDataTypeParameters>150 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ATTRIBUTE4" id="B36C9B08-428D-C317-F1E0-4C8BC1D548F7">
+<sourceConnName>sybinter_desaerp4</sourceConnName>
+<sourceObjSchema>VML_MTL_TRANSACTION_REASONS</sourceObjSchema>
+<sourceObjName>ATTRIBUTE4</sourceObjName>
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-12 23:59:01 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 BYTE</dataTypeSize>
+<ownDataTypeParameters>150 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ATTRIBUTE5" id="A1708CE6-1ABF-9D4B-26C6-7A55B4FCA213">
+<sourceConnName>sybinter_desaerp4</sourceConnName>
+<sourceObjSchema>VML_MTL_TRANSACTION_REASONS</sourceObjSchema>
+<sourceObjName>ATTRIBUTE5</sourceObjName>
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-12 23:59:01 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 BYTE</dataTypeSize>
+<ownDataTypeParameters>150 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ATTRIBUTE6" id="8B0AF4A3-D854-74CF-1EB3-9C2A6BFE4F59">
+<sourceConnName>sybinter_desaerp4</sourceConnName>
+<sourceObjSchema>VML_MTL_TRANSACTION_REASONS</sourceObjSchema>
+<sourceObjName>ATTRIBUTE6</sourceObjName>
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-12 23:59:01 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 BYTE</dataTypeSize>
+<ownDataTypeParameters>150 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ATTRIBUTE7" id="41C7E7B4-DD22-C80A-D191-5F82982BBA37">
+<sourceConnName>sybinter_desaerp4</sourceConnName>
+<sourceObjSchema>VML_MTL_TRANSACTION_REASONS</sourceObjSchema>
+<sourceObjName>ATTRIBUTE7</sourceObjName>
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-12 23:59:01 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 BYTE</dataTypeSize>
+<ownDataTypeParameters>150 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ATTRIBUTE8" id="3FB21B6B-8095-BC31-DEEA-7B79187E5982">
+<sourceConnName>sybinter_desaerp4</sourceConnName>
+<sourceObjSchema>VML_MTL_TRANSACTION_REASONS</sourceObjSchema>
+<sourceObjName>ATTRIBUTE8</sourceObjName>
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-12 23:59:01 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 BYTE</dataTypeSize>
+<ownDataTypeParameters>150 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ATTRIBUTE9" id="EFE9FAE2-8FFD-871E-5ADC-6A48509C1C21">
+<sourceConnName>sybinter_desaerp4</sourceConnName>
+<sourceObjSchema>VML_MTL_TRANSACTION_REASONS</sourceObjSchema>
+<sourceObjName>ATTRIBUTE9</sourceObjName>
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-12 23:59:01 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 BYTE</dataTypeSize>
+<ownDataTypeParameters>150 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ATTRIBUTE10" id="6A8B346E-9A45-A68E-3F3F-DFC8951A962B">
+<sourceConnName>sybinter_desaerp4</sourceConnName>
+<sourceObjSchema>VML_MTL_TRANSACTION_REASONS</sourceObjSchema>
+<sourceObjName>ATTRIBUTE10</sourceObjName>
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-12 23:59:01 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 BYTE</dataTypeSize>
+<ownDataTypeParameters>150 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ATTRIBUTE11" id="1F99058D-3542-B2C3-32CA-8B4E661F5D43">
+<sourceConnName>sybinter_desaerp4</sourceConnName>
+<sourceObjSchema>VML_MTL_TRANSACTION_REASONS</sourceObjSchema>
+<sourceObjName>ATTRIBUTE11</sourceObjName>
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-12 23:59:01 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 BYTE</dataTypeSize>
+<ownDataTypeParameters>150 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ATTRIBUTE12" id="82DF661E-8B74-5108-ECF9-8AA350518F26">
+<sourceConnName>sybinter_desaerp4</sourceConnName>
+<sourceObjSchema>VML_MTL_TRANSACTION_REASONS</sourceObjSchema>
+<sourceObjName>ATTRIBUTE12</sourceObjName>
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-12 23:59:01 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 BYTE</dataTypeSize>
+<ownDataTypeParameters>150 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ATTRIBUTE13" id="4DF6EDB9-7FF5-6DD2-E948-06D4F56CE740">
+<sourceConnName>sybinter_desaerp4</sourceConnName>
+<sourceObjSchema>VML_MTL_TRANSACTION_REASONS</sourceObjSchema>
+<sourceObjName>ATTRIBUTE13</sourceObjName>
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-12 23:59:01 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 BYTE</dataTypeSize>
+<ownDataTypeParameters>150 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ATTRIBUTE14" id="5D1EB6DC-CBB4-B181-3052-21E957A5EF0F">
+<sourceConnName>sybinter_desaerp4</sourceConnName>
+<sourceObjSchema>VML_MTL_TRANSACTION_REASONS</sourceObjSchema>
+<sourceObjName>ATTRIBUTE14</sourceObjName>
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-12 23:59:01 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 BYTE</dataTypeSize>
+<ownDataTypeParameters>150 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ATTRIBUTE15" id="F98091D8-546B-00EB-8309-C90E6DB496FE">
+<sourceConnName>sybinter_desaerp4</sourceConnName>
+<sourceObjSchema>VML_MTL_TRANSACTION_REASONS</sourceObjSchema>
+<sourceObjName>ATTRIBUTE15</sourceObjName>
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-12 23:59:01 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 BYTE</dataTypeSize>
+<ownDataTypeParameters>150 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ATTRIBUTE_CATEGORY" id="65016AB4-24E3-A30D-EBD4-05CF3ADFF320">
+<sourceConnName>sybinter_desaerp4</sourceConnName>
+<sourceObjSchema>VML_MTL_TRANSACTION_REASONS</sourceObjSchema>
+<sourceObjName>ATTRIBUTE_CATEGORY</sourceObjName>
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-12 23:59:01 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="WORKFLOW_NAME" id="5E14650B-CDF3-882D-53D6-70747C19BFED">
+<sourceConnName>sybinter_desaerp4</sourceConnName>
+<sourceObjSchema>VML_MTL_TRANSACTION_REASONS</sourceObjSchema>
+<sourceObjName>WORKFLOW_NAME</sourceObjName>
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-12 23:59:01 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80 BYTE</dataTypeSize>
+<ownDataTypeParameters>80 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="WORKFLOW_DISPLAY_NAME" id="562EAA3A-8F40-B619-4217-2F77790DA905">
+<sourceConnName>sybinter_desaerp4</sourceConnName>
+<sourceObjSchema>VML_MTL_TRANSACTION_REASONS</sourceObjSchema>
+<sourceObjName>WORKFLOW_DISPLAY_NAME</sourceObjName>
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-12 23:59:01 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80 BYTE</dataTypeSize>
+<ownDataTypeParameters>80 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="WORKFLOW_PROCESS" id="B6DBDA4B-6EBA-20D8-A84C-69A47BB5EFD0">
+<sourceConnName>sybinter_desaerp4</sourceConnName>
+<sourceObjSchema>VML_MTL_TRANSACTION_REASONS</sourceObjSchema>
+<sourceObjName>WORKFLOW_PROCESS</sourceObjName>
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-12 23:59:01 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80 BYTE</dataTypeSize>
+<ownDataTypeParameters>80 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="WORKFLOW_DISPLAY_PROCESS" id="7B1799D0-2810-21D9-E050-60B270D9739C">
+<sourceConnName>sybinter_desaerp4</sourceConnName>
+<sourceObjSchema>VML_MTL_TRANSACTION_REASONS</sourceObjSchema>
+<sourceObjName>WORKFLOW_DISPLAY_PROCESS</sourceObjName>
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-12 23:59:01 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80 BYTE</dataTypeSize>
+<ownDataTypeParameters>80 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REASON_TYPE" id="3E4C7A1A-7034-FE82-CED1-B09B04739E32">
+<sourceConnName>sybinter_desaerp4</sourceConnName>
+<sourceObjSchema>VML_MTL_TRANSACTION_REASONS</sourceObjSchema>
+<sourceObjName>REASON_TYPE</sourceObjName>
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-12 23:59:01 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REASON_TYPE_DISPLAY" id="828D2206-8848-4EAD-63A5-C28B1ABAEE0D">
+<sourceConnName>sybinter_desaerp4</sourceConnName>
+<sourceObjSchema>VML_MTL_TRANSACTION_REASONS</sourceObjSchema>
+<sourceObjName>REASON_TYPE_DISPLAY</sourceObjName>
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-12 23:59:01 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80 BYTE</dataTypeSize>
+<ownDataTypeParameters>80 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>

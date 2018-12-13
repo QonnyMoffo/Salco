@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2C3EEE10-2006-B3C4-9A5D-39A3B46700A4" schemaObject="1BFD44C5-87D9-79C1-586D-D17460850C8D" name="JSYB_BG_MOTIVOS_CAT">
+<sourceConnName>bodega_desaerp4</sourceConnName>
+<sourceObjSchema>BODEGA</sourceObjSchema>
+<sourceObjName>JSYB_BG_MOTIVOS_CAT</sourceObjName>
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-13 00:07:47 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CN_TRANSACCION" id="5A7B7784-991F-8D16-0349-8E30D96A6F7D">
+<sourceConnName>bodega_desaerp4</sourceConnName>
+<sourceObjSchema>JSYB_BG_MOTIVOS_CAT</sourceObjSchema>
+<sourceObjName>CN_TRANSACCION</sourceObjName>
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-13 00:07:47 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REASON_ID" id="0F6A5FA9-23E3-37C1-4399-CFF274290EFD">
+<sourceConnName>bodega_desaerp4</sourceConnName>
+<sourceObjSchema>JSYB_BG_MOTIVOS_CAT</sourceObjSchema>
+<sourceObjName>REASON_ID</sourceObjName>
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-13 00:07:47 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LOCALIZADOR_DFLT" id="E1DCE962-5145-5CE0-E9F8-C3997F4B9715">
+<sourceConnName>bodega_desaerp4</sourceConnName>
+<sourceObjSchema>JSYB_BG_MOTIVOS_CAT</sourceObjSchema>
+<sourceObjName>LOCALIZADOR_DFLT</sourceObjName>
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-13 00:07:47 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ORDEN" id="3A3C4774-3B36-D1C6-5937-B9F7ED087423">
+<sourceConnName>bodega_desaerp4</sourceConnName>
+<sourceObjSchema>JSYB_BG_MOTIVOS_CAT</sourceObjSchema>
+<sourceObjName>ORDEN</sourceObjName>
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-13 00:07:47 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO_CAJA" id="C20F4306-0D76-C83C-959D-DD5283CEB90A">
+<sourceConnName>bodega_desaerp4</sourceConnName>
+<sourceObjSchema>JSYB_BG_MOTIVOS_CAT</sourceObjSchema>
+<sourceObjName>TIPO_CAJA</sourceObjName>
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-13 00:07:47 UTC</createdTime>
+<commentInRDBMS>Indica si el contenido de la caja acepta sÃ³lo Caja, SÃ³lo Tira o ambos CT</commentInRDBMS>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FDC82A30-CB18-4ABC-1CD7-603AD5ADB110" name="JMC_PK">
+<sourceConnName>bodega_desaerp4</sourceConnName>
+<sourceObjSchema>BODEGA</sourceObjSchema>
+<sourceObjName>JMC_PK</sourceObjName>
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-13 00:07:47 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5A7B7784-991F-8D16-0349-8E30D96A6F7D"/>
+<colUsage columnID="0F6A5FA9-23E3-37C1-4399-CFF274290EFD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

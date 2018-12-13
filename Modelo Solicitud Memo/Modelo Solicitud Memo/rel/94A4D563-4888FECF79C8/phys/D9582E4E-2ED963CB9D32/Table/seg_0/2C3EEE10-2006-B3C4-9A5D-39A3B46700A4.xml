@@ -1,0 +1,54 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableProxyOraclev10g" name="JSYB_BG_MOTIVOS_CAT" directorySegmentName="seg_0" id="2C3EEE10-2006-B3C4-9A5D-39A3B46700A4">
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-13 00:07:47 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+<schemaObject>1BFD44C5-87D9-79C1-586D-D17460850C8D</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>8F7975C8-969C-61FF-CC18-39E95DD9A332</segment>
+<tableSpace>4FEF9636-20CE-E9CC-FE35-46D3C1E84D12</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="REASON_ID" id="0F6A5FA9-23E3-37C1-4399-CFF274290EFD">
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-13 00:07:47 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ORDEN" id="3A3C4774-3B36-D1C6-5937-B9F7ED087423">
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-13 00:07:47 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CN_TRANSACCION" id="5A7B7784-991F-8D16-0349-8E30D96A6F7D">
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-13 00:07:47 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TIPO_CAJA" id="C20F4306-0D76-C83C-959D-DD5283CEB90A">
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-13 00:07:47 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LOCALIZADOR_DFLT" id="E1DCE962-5145-5CE0-E9F8-C3997F4B9715">
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-13 00:07:47 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="JMC_PK" id="FDC82A30-CB18-4ABC-1CD7-603AD5ADB110">
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-13 00:07:47 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+<logging>NO</logging>
+<segment>F42BE279-6479-659B-1343-89CD43FA76A6</segment>
+<tableSpace>79623659-BA52-8B15-199D-34927C8F780C</tableSpace>
+<indexSegment>F42BE279-6479-659B-1343-89CD43FA76A6</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev10g>
