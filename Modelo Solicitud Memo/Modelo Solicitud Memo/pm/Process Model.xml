@@ -1,7 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="3D4BEFCA-5D52-A53B-2B39-0B8322064334">
-<createdBy>carayar</createdBy>
-<createdTime>2018-12-12 23:44:40 UTC</createdTime>
-<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
-<shouldBeOpen>false</shouldBeOpen>
-</ProcessModel>
