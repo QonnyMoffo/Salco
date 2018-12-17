@@ -1,6 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<StorageDesignOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.StorageDesignOraclev10g" name="Oracle Database 10g" id="C10692AF-5B43-68D2-CA36-36300214A0FF" siteID="D9582E4E-79E2-319F-387A-2ED963CB9D32" siteName="Oracle Database 10g" siteType="8">
-<createdBy>carayar</createdBy>
-<createdTime>2018-12-12 23:45:48 UTC</createdTime>
-<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
-</StorageDesignOraclev10g>
