@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="24FE907C-ECCC-8F6C-0641-CE20762C00E9" containerWithKeyObject="2C3EEE10-2006-B3C4-9A5D-39A3B46700A4" localFKIndex="1852C09C-77E3-0DD6-5382-95C32FE3C1D8" name="JSYB_BG_MOTIVOS_CAT_CATALOGO_TRANSACCIONES_FK">
+<createdBy>QonnyMoffo</createdBy>
+<createdTime>2018-12-17 16:34:46 UTC</createdTime>
+<ownerDesignName>Modelo de Datos</ownerDesignName>
+<referredTableLongName>BODEGA.CATALOGO_TRANSACCIONES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>567FC152-6CB9-6762-F2C6-E1C18AAC0CDD</referredTableID>
+<keyObject>277DF9F3-E115-5A3F-F995-FE5BA3BB8A7D</keyObject>
+<referredKeyID>277DF9F3-E115-5A3F-F995-FE5BA3BB8A7D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>TRANSACCION</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

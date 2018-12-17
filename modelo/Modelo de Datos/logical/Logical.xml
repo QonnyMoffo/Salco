@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="597D4EE4-0D64-B55E-E966-FCAEA971F79E" mainViewID="27186C13-1DF7-6AB0-83B3-50C87255A74A">
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-12 23:44:40 UTC</createdTime>
+<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

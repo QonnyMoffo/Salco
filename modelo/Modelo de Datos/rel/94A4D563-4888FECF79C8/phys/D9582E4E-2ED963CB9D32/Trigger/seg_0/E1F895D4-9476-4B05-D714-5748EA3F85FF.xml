@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="JSYB_BG_MOTIVOS_CAT_TRG01" directorySegmentName="seg_0" id="E1F895D4-9476-4B05-D714-5748EA3F85FF">
+<sourceConnName>bodega_desaerp4</sourceConnName>
+<sourceObjSchema>BODEGA</sourceObjSchema>
+<sourceObjName>JSYB_BG_MOTIVOS_CAT_TRG01</sourceObjName>
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-13 00:07:47 UTC</createdTime>
+<ownerDesignName>Modelo de Datos</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body>DECLARE&lt;br/&gt;   PRAGMA AUTONOMOUS_TRANSACTION;&lt;br/&gt;  vl_trx         NUMBER;&lt;br/&gt;  vl_localizador NUMBER;&lt;br/&gt;  vl_motivo      NUMBER := :NEW.reason_id;&lt;br/&gt;  vl_loc_dflt    NUMBER := nvl(:NEW.localizador_dflt, -10);&lt;br/&gt;BEGIN&lt;br/&gt;-- TRIGGER QUE VALIDA CONSISTENCIA DE LOCALIZAORES POR MOTIVO&lt;br/&gt;-- PARA TRXS DE RECCPCION CD CXANJE Y SSTOCK&lt;br/&gt;&lt;br/&gt;  IF :NEW.cn_transaccion = 255 THEN --recepciÃ³n CD CANJE&lt;br/&gt;    vl_trx := 256;&lt;br/&gt;&lt;br/&gt;  ELSIF :NEW.cn_transaccion = 256 THEN  --recepciÃ³n CD SS&lt;br/&gt;    vl_trx := 255;&lt;br/&gt;&lt;br/&gt;  END IF;&lt;br/&gt;&lt;br/&gt;  IF vl_trx IS NOT NULL THEN&lt;br/&gt;   BEGIN&lt;br/&gt;     SELECT localizador_dflt&lt;br/&gt;     INTO vl_localizador&lt;br/&gt;     FROM JSYB_BG_MOTIVOS_CAT&lt;br/&gt;     WHERE cn_transaccion  = vl_trx&lt;br/&gt;       AND reason_id       = vl_motivo&lt;br/&gt;			 AND vl_localizador IS NOT NULL;&lt;br/&gt;&lt;br/&gt;     IF vl_localizador != vl_loc_dflt THEN&lt;br/&gt;       raise_application_error(-20100, &apos;Para el mismo motivo &apos; || vl_motivo || &apos; localizador de transacciÃ³n &apos; || vl_trx || &apos; es diferente&apos;);&lt;br/&gt;     END IF;&lt;br/&gt;   EXCEPTION&lt;br/&gt;     WHEN no_data_found THEN&lt;br/&gt;        NULL;&lt;br/&gt;   END;&lt;br/&gt;  END IF;&lt;br/&gt;&lt;br/&gt;END;</body>
+<triggerTime>AFTER</triggerTime>
+<table>2C3EEE10-2006-B3C4-9A5D-39A3B46700A4</table>
+</TriggerOraclev10g>
