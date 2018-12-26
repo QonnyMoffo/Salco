@@ -1,0 +1,4 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="main_view" objectID="3183ABDC-AE6F-A5A4-E490-DF6A638FAF28" name="Modelo Solicitud Memo" visible="true"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

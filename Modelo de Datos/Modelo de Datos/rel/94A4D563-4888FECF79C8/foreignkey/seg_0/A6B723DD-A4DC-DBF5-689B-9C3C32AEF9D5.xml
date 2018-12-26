@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A6B723DD-A4DC-DBF5-689B-9C3C32AEF9D5" containerWithKeyObject="AC8A61D3-5ED0-9E3D-9E71-4B08B1E7C3F4" localFKIndex="CDADD6E0-D0E5-D3FD-40FD-E654A7FE1A7B" name="JSYB_BG_DET_LOD_SOLICITUD_MEMO_FK">
+<createdBy>QonnyMoffo</createdBy>
+<createdTime>2018-12-26 15:30:58 UTC</createdTime>
+<ownerDesignName>Modelo de Datos</ownerDesignName>
+<referredTableLongName>BODEGA.JSYB_BG_DET_SOLICITUD_MEMO_TL</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>01CF1165-409F-7BCF-C460-3B3A6E089AFA</referredTableID>
+<keyObject>4E5D39C7-0A7A-8D11-3528-E23A80C28916</keyObject>
+<referredKeyID>4E5D39C7-0A7A-8D11-3528-E23A80C28916</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>SOLICITUD_ID,CODIGO_EMPRESA,ORG_ID_INV,INVENTORY_ITEM_ID,CODIGO_LOTE</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

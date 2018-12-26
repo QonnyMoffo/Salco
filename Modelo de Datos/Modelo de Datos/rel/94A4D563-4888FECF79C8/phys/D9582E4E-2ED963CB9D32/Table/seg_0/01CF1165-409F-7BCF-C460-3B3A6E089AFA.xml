@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableProxyOraclev10g" name="JSYB_BG_DET_SOLICITUD_MEMO_TL" directorySegmentName="seg_0" id="01CF1165-409F-7BCF-C460-3B3A6E089AFA">
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-13 13:53:34 UTC</createdTime>
+<ownerDesignName>Modelo de Datos</ownerDesignName>
+<schemaObject>1BFD44C5-87D9-79C1-586D-D17460850C8D</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="CANTIDAD_MAX" id="09A680BF-F88C-1517-1523-1EC7D1F7EB3C">
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-13 13:53:34 UTC</createdTime>
+<ownerDesignName>Modelo de Datos</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CODIGO_EMPRESA" id="1A860126-2219-2423-8DF8-29997ED6C034">
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-13 13:53:34 UTC</createdTime>
+<ownerDesignName>Modelo de Datos</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="VTO_LOTE" id="558372D1-2055-709E-13E6-E914EBB9B1C9">
+<createdBy>QonnyMoffo</createdBy>
+<createdTime>2018-12-13 22:32:08 UTC</createdTime>
+<ownerDesignName>Modelo de Datos</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="INVENTORY_ITEM_ID" id="D4B6B716-C492-9ED1-AE71-16681C37E524">
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-13 13:53:34 UTC</createdTime>
+<ownerDesignName>Modelo de Datos</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CODIGO_LOTE" id="D67B0F93-43E6-A905-49E0-1384566D91F8">
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-13 13:53:34 UTC</createdTime>
+<ownerDesignName>Modelo de Datos</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SOLICITUD_ID" id="E3EFA635-FA60-8787-4CF8-7070A69C04DF">
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-13 13:53:34 UTC</createdTime>
+<ownerDesignName>Modelo de Datos</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="JSYB_BG_ENC_DET_SOLICITUD_MEMO_FK" id="EF50D95D-F36C-7B75-22D1-643113FF634F">
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-13 13:58:23 UTC</createdTime>
+<ownerDesignName>Modelo de Datos</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="JSYB_BG_DET_SOLICITUD_MEMO_PK" id="4E5D39C7-0A7A-8D11-3528-E23A80C28916">
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-13 13:53:34 UTC</createdTime>
+<ownerDesignName>Modelo de Datos</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev10g>

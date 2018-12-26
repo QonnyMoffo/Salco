@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="896BAFBF-A3B3-78F0-746B-3A8642882060" schemaObject="1BFD44C5-87D9-79C1-586D-D17460850C8D" name="JSYB_BG_PARAMETROS_GD_A_CD_TL">
+<sourceConnName>bodega_desaerp4</sourceConnName>
+<sourceObjSchema>BODEGA</sourceObjSchema>
+<sourceObjName>JSYB_BG_PARAMETROS_GD_A_CD_TL</sourceObjName>
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-13 00:09:39 UTC</createdTime>
+<ownerDesignName>Modelo de Datos</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="LO_CODIGO" id="44461B47-3659-D31E-93DE-A0A347AB27C2">
+<sourceConnName>bodega_desaerp4</sourceConnName>
+<sourceObjSchema>JSYB_BG_PARAMETROS_GD_A_CD_TL</sourceObjSchema>
+<sourceObjName>LO_CODIGO</sourceObjName>
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-13 00:09:39 UTC</createdTime>
+<ownerDesignName>Modelo de Datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REASON_ID" id="3BCE858A-FC1D-5BBB-62D2-CB119485CF19">
+<sourceConnName>bodega_desaerp4</sourceConnName>
+<sourceObjSchema>JSYB_BG_PARAMETROS_GD_A_CD_TL</sourceObjSchema>
+<sourceObjName>REASON_ID</sourceObjName>
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-13 00:09:39 UTC</createdTime>
+<ownerDesignName>Modelo de Datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DIA_INICIO" id="1AE63F2E-AEB3-D8AC-EA2A-BD68DDC6F982">
+<sourceConnName>bodega_desaerp4</sourceConnName>
+<sourceObjSchema>JSYB_BG_PARAMETROS_GD_A_CD_TL</sourceObjSchema>
+<sourceObjName>DIA_INICIO</sourceObjName>
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-13 00:09:39 UTC</createdTime>
+<ownerDesignName>Modelo de Datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DIA_TERMINO" id="FF4C55FD-23EF-6670-73DE-707DDC531547">
+<sourceConnName>bodega_desaerp4</sourceConnName>
+<sourceObjSchema>JSYB_BG_PARAMETROS_GD_A_CD_TL</sourceObjSchema>
+<sourceObjName>DIA_TERMINO</sourceObjName>
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-13 00:09:39 UTC</createdTime>
+<ownerDesignName>Modelo de Datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO_EMPRESA" id="3CF0CBC7-C47B-A12C-BC02-1D158FFC8D09">
+<sourceConnName>bodega_desaerp4</sourceConnName>
+<sourceObjSchema>JSYB_BG_PARAMETROS_GD_A_CD_TL</sourceObjSchema>
+<sourceObjName>CODIGO_EMPRESA</sourceObjName>
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-13 00:09:39 UTC</createdTime>
+<ownerDesignName>Modelo de Datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="381A5A1E-B8E2-023E-F910-80A5C0AC2B7B" name="JSYB_BG_PARAMETROS_GD_A_CD_PK">
+<sourceConnName>bodega_desaerp4</sourceConnName>
+<sourceObjSchema>BODEGA</sourceObjSchema>
+<sourceObjName>JSYB_BG_PARAMETROS_GD_A_CD_PK</sourceObjName>
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-13 00:09:39 UTC</createdTime>
+<ownerDesignName>Modelo de Datos</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="44461B47-3659-D31E-93DE-A0A347AB27C2"/>
+<colUsage columnID="3BCE858A-FC1D-5BBB-62D2-CB119485CF19"/>
+<colUsage columnID="3CF0CBC7-C47B-A12C-BC02-1D158FFC8D09"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

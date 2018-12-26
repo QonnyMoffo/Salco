@@ -1,0 +1,1012 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelational" name="Modelo Solicitud Memo" id="3183ABDC-AE6F-A5A4-E490-DF6A638FAF28">
+<createdBy>carayar</createdBy>
+<modifiedBy>carayar</modifiedBy>
+<createdTime>2018-12-12 23:45:27 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="000773AA-B711-C0D8-53FC-A18B7DE79313" otype="Note" vid="7F193716-20A2-9F94-F3F2-34E225FCC870">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="767" y="430" width="100" height="26"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-256</backgroundColor>
+<foregroundColor>-3355393</foregroundColor>
+<comment>Relación Nueva</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Title</foType>
+<fontName>Calibri</fontName>
+<fontSize>11</fontSize>
+<fontStyle>1</fontStyle>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Título</foType>
+<fontName>Calibri</fontName>
+<fontSize>11</fontSize>
+<fontStyle>1</fontStyle>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="01893263-CAFF-BDCB-37A5-9272B1AE1F15" otype="Note" vid="4846C6B1-5CBC-BB0E-E7EA-73E28B2C2BD8">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="0" y="31" width="50" height="20"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-103</backgroundColor>
+<foregroundColor>-16776961</foregroundColor>
+<comment>Nueva</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Title</foType>
+<fontName>Calibri</fontName>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Título</foType>
+<fontName>Calibri</fontName>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="01CF1165-409F-7BCF-C460-3B3A6E089AFA" otype="Table" vid="F9FBCE33-BCEB-4BEB-EB8C-C692761CC8A1">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="70" y="619" width="676" height="150"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="105EAD3F-BB9B-22EB-8A25-2ED99C84E0AC" otype="Note" vid="56E92CB4-4BFA-04B3-B626-B732A358D025">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="419" y="575" width="100" height="26"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-256</backgroundColor>
+<foregroundColor>-3355393</foregroundColor>
+<comment>Relación Nueva</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Title</foType>
+<fontName>Calibri</fontName>
+<fontSize>11</fontSize>
+<fontStyle>1</fontStyle>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Título</foType>
+<fontName>Calibri</fontName>
+<fontSize>11</fontSize>
+<fontStyle>1</fontStyle>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="1B5A3D11-2D13-3296-FC04-6752F9F74CD5" otype="Table" vid="048809C7-8917-E156-34D4-0EAD79CB61BA">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="74" y="1005" width="338" height="458"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3355444</backgroundColor>
+<foregroundColor>-16776961</foregroundColor>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Column</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject>
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject>
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Comments</foType>
+<colorRGB>-12566464</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Título</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Columna</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>No Nulo</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Tipo de Dato</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Clave</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Elemento de Clave Única</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="223ECECD-CFF6-A9BD-B001-CE3C73D485CA" otype="Note" vid="A24F9B4A-9E7A-5239-DE8C-4CD965A93187">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="602" y="9" width="391" height="87"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-10027009</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment> &lt;br/&gt;   SOLICITUD MEMO DE DEVOLUCIÓN</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Title</foType>
+<fontName>Calibri</fontName>
+<fontSize>24</fontSize>
+<fontStyle>1</fontStyle>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Título</foType>
+<fontName>Calibri</fontName>
+<fontSize>24</fontSize>
+<fontStyle>1</fontStyle>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="2C3EEE10-2006-B3C4-9A5D-39A3B46700A4" otype="Table" vid="29BA768D-C6CE-BA64-3BF9-8EA26DC7534C">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="701" y="1079" width="264" height="113"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3355444</backgroundColor>
+<foregroundColor>-16776961</foregroundColor>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Column</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject>
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject>
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Comments</foType>
+<colorRGB>-12566464</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Título</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Columna</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>No Nulo</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Elemento de Clave Primaria</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Tipo de Dato</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Clave</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Elemento de Clave Ajena</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="3BC93135-1948-3F6D-027D-FDED104859C2" otype="Note" vid="33C70326-014B-5C5D-189E-BD2B6ACBACC0">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="607" y="317" width="141" height="94"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3355393</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>ESTADO SOLICITUD MEMO:&lt;br/&gt;&lt;br/&gt;ING:   Ingresado&lt;br/&gt;MEM: Memo Generado&lt;br/&gt;EXP:  Exportado&lt;br/&gt;ELI:    Eliminado</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Title</foType>
+<fontName>Calibri</fontName>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Título</foType>
+<fontName>Calibri</fontName>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="42841149-47FD-F1D8-4551-AECD4C78B3B0" otype="Note" vid="6944378B-F9E3-E6AE-9935-969D35642D1B">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="81" y="548" width="110" height="26"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-39322</backgroundColor>
+<foregroundColor>-3355393</foregroundColor>
+<comment>Relación NO Existe</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Título</foType>
+<fontName>Calibri</fontName>
+<fontSize>11</fontSize>
+<fontStyle>1</fontStyle>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Title</foType>
+<fontName>Calibri</fontName>
+<fontSize>11</fontSize>
+<fontStyle>1</fontStyle>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="45B550CE-C85E-6002-8AE5-14F9358ED22F" otype="Table" vid="8D5556A7-C357-142D-10C2-B54B90A13AE3">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="860" y="600" width="679" height="178"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-6684775</backgroundColor>
+<foregroundColor>-16776961</foregroundColor>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Column</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject>
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject>
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Comments</foType>
+<colorRGB>-12566464</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Título</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Columna</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>No Nulo</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Elemento de Clave Única</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Tipo de Dato</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Clave</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="501D99E9-2F5D-CD8C-5EA4-D95F90B9577A" otype="Note" vid="98C47E19-4B58-C10A-C756-20834EFDCFBD">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1407" y="390" width="100" height="26"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-256</backgroundColor>
+<foregroundColor>-3355393</foregroundColor>
+<comment>Relación Nueva</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Title</foType>
+<fontName>Calibri</fontName>
+<fontSize>11</fontSize>
+<fontStyle>1</fontStyle>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Título</foType>
+<fontName>Calibri</fontName>
+<fontSize>11</fontSize>
+<fontStyle>1</fontStyle>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="567FC152-6CB9-6762-F2C6-E1C18AAC0CDD" otype="Table" vid="6F111248-3861-53D0-7D06-34AB83AD0F3D">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1263" y="1027" width="292" height="354"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3355444</backgroundColor>
+<foregroundColor>-16776961</foregroundColor>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Column</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject>
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject>
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Comments</foType>
+<colorRGB>-12566464</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Título</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Columna</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>No Nulo</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Elemento de Clave Primaria</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Tipo de Dato</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Clave</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Elemento de Clave Ajena</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="68760269-8541-8668-3A5D-AE7C170F9784" otype="Note" vid="8EA861C4-6CDB-1FF8-B145-C3F831D6B993">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="0" y="50" width="63" height="20"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3355444</backgroundColor>
+<foregroundColor>-16776961</foregroundColor>
+<comment>Existente</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Title</foType>
+<fontName>Calibri</fontName>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Título</foType>
+<fontName>Calibri</fontName>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="7F14C3A0-3FAE-D054-C039-D0A4F491B12C" otype="Note" vid="F0963668-05CD-C47C-7F6E-AA54E7009900">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1217" y="566" width="100" height="27"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-256</backgroundColor>
+<foregroundColor>-3355393</foregroundColor>
+<comment>Relación Nueva</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Title</foType>
+<fontName>Calibri</fontName>
+<fontSize>11</fontSize>
+<fontStyle>1</fontStyle>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Título</foType>
+<fontName>Calibri</fontName>
+<fontSize>11</fontSize>
+<fontStyle>1</fontStyle>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="88D90821-BF95-33B3-16B4-D4000DFBC744" otype="Note" vid="0F6DC01B-B70D-9E91-696C-91BDE71A30CF">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="480" y="1144" width="110" height="26"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-39322</backgroundColor>
+<foregroundColor>-3355393</foregroundColor>
+<comment>Relación NO Existe</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Título</foType>
+<fontName>Calibri</fontName>
+<fontSize>11</fontSize>
+<fontStyle>1</fontStyle>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Title</foType>
+<fontName>Calibri</fontName>
+<fontSize>11</fontSize>
+<fontStyle>1</fontStyle>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="896BAFBF-A3B3-78F0-746B-3A8642882060" otype="Table" vid="0E0C3FBF-1F2E-6675-47D9-5F6BF6C631FB">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="602" y="1283" width="474" height="116"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3355444</backgroundColor>
+<foregroundColor>-16776961</foregroundColor>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Column</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject>
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject>
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Comments</foType>
+<colorRGB>-12566464</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Título</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Columna</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>No Nulo</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Elemento de Clave Primaria</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Tipo de Dato</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Clave</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="996EF36F-09EE-16D9-0660-89212D217A91" otype="Note" vid="54DB1E1D-17C7-453B-A34D-6B2EECE885D1">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1214" y="791" width="100" height="27"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-256</backgroundColor>
+<foregroundColor>-3355393</foregroundColor>
+<comment>Relación Nueva</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Title</foType>
+<fontName>Calibri</fontName>
+<fontSize>11</fontSize>
+<fontStyle>1</fontStyle>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Título</foType>
+<fontName>Calibri</fontName>
+<fontSize>11</fontSize>
+<fontStyle>1</fontStyle>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="A72E9563-7BB8-44AF-D4A9-E32C58393583" otype="Note" vid="6F1CD011-A2D2-AD43-FB4F-47605B2EDE37">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="837" y="336" width="164" height="55"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3355393</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>MOTIVOS MEMO DEVOLUCION:&lt;br/&gt;&lt;br/&gt;SIN DEFINIR</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Title</foType>
+<fontName>Calibri</fontName>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Título</foType>
+<fontName>Calibri</fontName>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="A8D44CD7-ECC3-1170-55A4-707B59AE348F" otype="Note" vid="C22129EE-F6CD-0A7B-2989-ED4A1D9F2158">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="418" y="778" width="100" height="26"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-256</backgroundColor>
+<foregroundColor>-3355393</foregroundColor>
+<comment>Relación Nueva</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Title</foType>
+<fontName>Calibri</fontName>
+<fontSize>11</fontSize>
+<fontStyle>1</fontStyle>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Título</foType>
+<fontName>Calibri</fontName>
+<fontSize>11</fontSize>
+<fontStyle>1</fontStyle>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="AC8A61D3-5ED0-9E3D-9E71-4B08B1E7C3F4" otype="Table" vid="56D1CDB8-4975-B0E1-3F0C-F6A6E0AC18AE">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="39" y="820" width="743" height="164"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="AE5D5039-9FE2-FA2D-881C-DB1F4A40EB12" otype="Note" vid="49A185D4-897D-A322-4E77-2D4881BA3343">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1066" y="1146" width="110" height="26"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-39322</backgroundColor>
+<foregroundColor>-3355393</foregroundColor>
+<comment>Relación NO Existe</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Título</foType>
+<fontName>Calibri</fontName>
+<fontSize>11</fontSize>
+<fontStyle>1</fontStyle>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Title</foType>
+<fontName>Calibri</fontName>
+<fontSize>11</fontSize>
+<fontStyle>1</fontStyle>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="B46BABE2-F93E-C3A3-9DF4-DDB5D0A3AC12" otype="Note" vid="822E90BD-2B93-BD71-13CD-A141C8A22A83">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="0" y="0" width="117" height="29"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-39322</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>Colores de Tablas:</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Title</foType>
+<fontName>Calibri</fontName>
+<fontSize>13</fontSize>
+<fontStyle>1</fontStyle>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Título</foType>
+<fontName>Calibri</fontName>
+<fontSize>13</fontSize>
+<fontStyle>1</fontStyle>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="B9852227-AFF6-58BC-1D09-6BAF25F3D80F" otype="Table" vid="32919D94-8FF4-1CDF-F2C2-6E65AFC17736">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1125" y="126" width="483" height="122"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="BF3238BB-7EF9-BFC2-0B72-C5CB8B496AC2" otype="Note" vid="3EC826CD-AE5B-2C2E-F26D-CCEC40058D26">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="606" y="472" width="141" height="68"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3355393</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>ORIGEN SOLICITUD MEMO:&lt;br/&gt;&lt;br/&gt;LO: Ingresado por Local&lt;br/&gt;CD: Ingresado por CD</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Title</foType>
+<fontName>Calibri</fontName>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Título</foType>
+<fontName>Calibri</fontName>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="BF83EA5C-AFFF-3115-C7B2-2533FC3006BC" otype="Table" vid="71D6F151-CBC9-EBFD-6219-0506C6A0F3FE">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="216" y="290" width="386" height="268"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="E174FF5D-595B-F9B4-6BC0-1F5B5079826E" otype="Note" vid="1E8C673E-D9E9-4CD6-3841-7C2CF69BFDBE">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="99" y="390" width="100" height="26"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-256</backgroundColor>
+<foregroundColor>-3355393</foregroundColor>
+<comment>Relación Nueva</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Title</foType>
+<fontName>Calibri</fontName>
+<fontSize>11</fontSize>
+<fontStyle>1</fontStyle>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Título</foType>
+<fontName>Calibri</fontName>
+<fontSize>11</fontSize>
+<fontStyle>1</fontStyle>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="E3FCEAAC-EB34-0CBE-7D34-27460FCED932" otype="Note" vid="25DBE0CA-51FA-B645-4F29-557CBD9927DB">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="0" y="69" width="76" height="20"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-6684775</backgroundColor>
+<foregroundColor>-16776961</foregroundColor>
+<comment>Modificada</comment>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Title</foType>
+<fontName>Calibri</fontName>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Título</foType>
+<fontName>Calibri</fontName>
+<fontSize>11</fontSize>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="E45D6E18-7373-7E55-2D60-9D81E556946C" otype="Table" vid="4A079BA5-3235-7414-B95B-03FDC1AD4016">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="0" y="126" width="480" height="122"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="F343A9CB-C0B3-778B-BF34-F041CF7A4A03" otype="Table" vid="E6D34BFE-B16F-0AC7-F693-C9EEA55CA278">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="830" y="822" width="746" height="164"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="FCC33DE3-C2D5-6FBA-F1B1-4C25E7CFE986" otype="Table" vid="C523D7BA-9834-C1BF-94BC-67B50D43F2CC">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1005" y="291" width="392" height="262"/>
+<useCustomFormat>true</useCustomFormat>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-6684775</backgroundColor>
+<foregroundColor>-16776961</foregroundColor>
+<fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
+<FontObject>
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Column</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject>
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject>
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Comments</foType>
+<colorRGB>-12566464</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Título</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Columna</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>No Nulo</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Elemento de Clave Primaria</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Tipo de Dato</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Elemento de Clave Ajena</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject>
+<foType>Clave</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</OView>
+</objectViews>
+<connectors>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="2320942E-9077-4F96-644A-5894929B3438" otype="FKIndexAssociation" vid_source="71D6F151-CBC9-EBFD-6219-0506C6A0F3FE" vid_target="C523D7BA-9834-C1BF-94BC-67B50D43F2CC">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<lineWidth>1</lineWidth>
+<points>
+<point x="602" y="422"/>
+<point x="1005" y="422"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="24FE907C-ECCC-8F6C-0641-CE20762C00E9" otype="FKIndexAssociation" vid_source="6F111248-3861-53D0-7D06-34AB83AD0F3D" vid_target="29BA768D-C6CE-BA64-3BF9-8EA26DC7534C">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<lineWidth>1</lineWidth>
+<points>
+<point x="1263" y="1135"/>
+<point x="965" y="1135"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="32F4755C-A600-37E4-6A0A-FC58E2956036" otype="FKIndexAssociation" vid_source="8D5556A7-C357-142D-10C2-B54B90A13AE3" vid_target="E6D34BFE-B16F-0AC7-F693-C9EEA55CA278">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<lineWidth>1</lineWidth>
+<points>
+<point x="1199" y="778"/>
+<point x="1199" y="822"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="4545CB7A-782C-6ED7-DBCD-7D5E3D8002DE" otype="FKIndexAssociation" vid_source="C523D7BA-9834-C1BF-94BC-67B50D43F2CC" vid_target="8D5556A7-C357-142D-10C2-B54B90A13AE3">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="1201" y="553"/>
+<point x="1201" y="600"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="63925D7C-B9DB-AD38-F99D-BEBCFF2C20F2" otype="FKIndexAssociation" vid_source="71D6F151-CBC9-EBFD-6219-0506C6A0F3FE" vid_target="F9FBCE33-BCEB-4BEB-EB8C-C692761CC8A1">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<lineWidth>1</lineWidth>
+<points>
+<point x="409" y="558"/>
+<point x="409" y="619"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="71D76A1B-2A31-458F-13CD-862FA1BBF9B6" otype="FKIndexAssociation" vid_source="71D6F151-CBC9-EBFD-6219-0506C6A0F3FE" vid_target="4A079BA5-3235-7414-B95B-03FDC1AD4016">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<lineWidth>1</lineWidth>
+<points>
+<point x="216" y="426"/>
+<point x="85" y="426"/>
+<point x="85" y="248"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="7BD565E4-BD94-07C0-EBB9-67EF7A6782CB" otype="FKIndexAssociation" vid_source="048809C7-8917-E156-34D4-0EAD79CB61BA" vid_target="29BA768D-C6CE-BA64-3BF9-8EA26DC7534C">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<lineWidth>1</lineWidth>
+<points>
+<point x="412" y="1135"/>
+<point x="701" y="1135"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="A6B723DD-A4DC-DBF5-689B-9C3C32AEF9D5" otype="FKIndexAssociation" vid_source="F9FBCE33-BCEB-4BEB-EB8C-C692761CC8A1" vid_target="56D1CDB8-4975-B0E1-3F0C-F6A6E0AC18AE">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<lineWidth>1</lineWidth>
+<points>
+<point x="408" y="769"/>
+<point x="408" y="820"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="DA07AFA3-D932-6ACD-8991-7A5339663C24" otype="FKIndexAssociation" vid_source="C523D7BA-9834-C1BF-94BC-67B50D43F2CC" vid_target="32919D94-8FF4-1CDF-F2C2-6E65AFC17736">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<lineWidth>1</lineWidth>
+<points>
+<point x="1397" y="424"/>
+<point x="1518" y="424"/>
+<point x="1518" y="248"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="F69B1097-648F-01DB-B6DD-20D84287F6A8" otype="FKIndexAssociation" vid_source="048809C7-8917-E156-34D4-0EAD79CB61BA" vid_target="71D6F151-CBC9-EBFD-6219-0506C6A0F3FE">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<lineWidth>1</lineWidth>
+<points>
+<point x="74" y="1021"/>
+<point x="21" y="1021"/>
+<point x="21" y="539"/>
+<point x="216" y="539"/>
+</points>
+</Connector>
+</connectors>
+</Diagram>

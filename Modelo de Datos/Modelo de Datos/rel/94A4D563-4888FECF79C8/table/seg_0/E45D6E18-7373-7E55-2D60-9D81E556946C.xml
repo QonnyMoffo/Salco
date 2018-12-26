@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E45D6E18-7373-7E55-2D60-9D81E556946C" name="JSYB_BG_LOC_SOLICITUD_MEMO_TL">
+<createdBy>QonnyMoffo</createdBy>
+<createdTime>2018-12-26 15:23:40 UTC</createdTime>
+<ownerDesignName>Modelo de Datos</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SOLICITUD_ID" id="AD0DB16C-F1DE-0EEE-339B-6B409AFCDAA6">
+<createdBy>QonnyMoffo</createdBy>
+<createdTime>2018-12-26 15:26:00 UTC</createdTime>
+<ownerDesignName>Modelo de Datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="71D76A1B-2A31-458F-13CD-862FA1BBF9B6" referredColumn="1D7DAAA6-52C3-0425-D546-377BEDC751BD"/>
+</associations>
+</Column>
+<Column name="CODIGO_EMPRESA" id="7D47D4C2-401F-E6C1-5933-3F78143775AE">
+<createdBy>QonnyMoffo</createdBy>
+<createdTime>2018-12-26 15:26:00 UTC</createdTime>
+<ownerDesignName>Modelo de Datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="71D76A1B-2A31-458F-13CD-862FA1BBF9B6" referredColumn="33FC3BBF-F5C7-D39C-4BF0-AFE02D33CB38"/>
+</associations>
+</Column>
+<Column name="LO_CODIGO" id="8D3AD866-F550-38D1-B182-417B6F44AA9F">
+<createdBy>QonnyMoffo</createdBy>
+<createdTime>2018-12-26 15:26:00 UTC</createdTime>
+<ownerDesignName>Modelo de Datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CANTIDAD_MAX" id="4B83D933-60CD-BBD8-BD8F-30CAB7A7AA7A">
+<createdBy>QonnyMoffo</createdBy>
+<createdTime>2018-12-26 15:26:00 UTC</createdTime>
+<ownerDesignName>Modelo de Datos</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C5DB5E69-BF71-83DF-C71B-93F140712678" name="JSYB_BG_LOC_SOLICITUD_MEMO_PK">
+<createdBy>QonnyMoffo</createdBy>
+<createdTime>2018-12-26 15:30:32 UTC</createdTime>
+<ownerDesignName>Modelo de Datos</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD0DB16C-F1DE-0EEE-339B-6B409AFCDAA6"/>
+<colUsage columnID="7D47D4C2-401F-E6C1-5933-3F78143775AE"/>
+<colUsage columnID="8D3AD866-F550-38D1-B182-417B6F44AA9F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BFEDD4E7-5E74-4B25-1D10-1BDD228B96B6" name="JSYB_BG_ENC_LOC_SOLICITUD_MEMO_FK">
+<createdBy>QonnyMoffo</createdBy>
+<createdTime>2018-12-26 15:32:32 UTC</createdTime>
+<ownerDesignName>Modelo de Datos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD0DB16C-F1DE-0EEE-339B-6B409AFCDAA6"/>
+<colUsage columnID="7D47D4C2-401F-E6C1-5933-3F78143775AE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
