@@ -1,6 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<SchemaObject class="oracle.dbtools.crest.model.design.relational.SchemaObject" name="BODEGA" directorySegmentName="seg_0" id="1BFD44C5-87D9-79C1-586D-D17460850C8D">
-<createdBy>carayar</createdBy>
-<createdTime>2018-12-12 23:45:48 UTC</createdTime>
-<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
-</SchemaObject>

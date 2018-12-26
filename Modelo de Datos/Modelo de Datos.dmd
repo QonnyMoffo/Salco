@@ -1,8 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Modelo de Datos" id="B3FC7B4D-4CBE-D5E4-3C3B-055F2E047E76" version="3.5">
-<createdBy>carayar</createdBy>
-<createdTime>2018-12-12 23:44:40 UTC</createdTime>
-<ownerDesignName>Modelo Solicitud Memo</ownerDesignName>
-<capitalNames>false</capitalNames>
-<designId>B3FC7B4D-4CBE-D5E4-3C3B-055F2E047E76</designId>
-</OSDM_Design>
