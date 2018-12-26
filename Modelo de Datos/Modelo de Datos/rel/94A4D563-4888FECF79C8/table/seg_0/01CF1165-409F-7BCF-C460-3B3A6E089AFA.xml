@@ -34,6 +34,16 @@
 <colAssociation fkAssociation="63925D7C-B9DB-AD38-F99D-BEBCFF2C20F2" referredColumn="33FC3BBF-F5C7-D39C-4BF0-AFE02D33CB38"/>
 </associations>
 </Column>
+<Column name="ORG_ID_INV" id="B0AF70CF-A5AF-2BC6-1024-BFB0E8FBCB34">
+<createdBy>QonnyMoffo</createdBy>
+<createdTime>2018-12-20 20:45:35 UTC</createdTime>
+<ownerDesignName>Modelo de Datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="INVENTORY_ITEM_ID" id="D4B6B716-C492-9ED1-AE71-16681C37E524">
 <createdBy>carayar</createdBy>
 <createdTime>2018-12-13 13:53:34 UTC</createdTime>
@@ -78,6 +88,7 @@
 <indexColumnUsage>
 <colUsage columnID="E3EFA635-FA60-8787-4CF8-7070A69C04DF"/>
 <colUsage columnID="1A860126-2219-2423-8DF8-29997ED6C034"/>
+<colUsage columnID="B0AF70CF-A5AF-2BC6-1024-BFB0E8FBCB34"/>
 <colUsage columnID="D4B6B716-C492-9ED1-AE71-16681C37E524"/>
 <colUsage columnID="D67B0F93-43E6-A905-49E0-1384566D91F8"/>
 </indexColumnUsage>

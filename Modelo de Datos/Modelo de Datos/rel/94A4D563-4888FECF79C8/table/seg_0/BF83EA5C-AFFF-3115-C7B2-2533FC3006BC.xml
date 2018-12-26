@@ -72,6 +72,17 @@
 <ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="MOTIVO" id="F7078CA5-62AB-8465-9CC3-7D828BA4BD71">
+<createdBy>QonnyMoffo</createdBy>
+<createdTime>2018-12-17 21:25:12 UTC</createdTime>
+<ownerDesignName>Modelo de Datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="DESDE" id="752AB63B-15B2-99C9-0B2F-31C1B1F1D554">
 <createdBy>carayar</createdBy>
 <createdTime>2018-12-13 13:42:20 UTC</createdTime>

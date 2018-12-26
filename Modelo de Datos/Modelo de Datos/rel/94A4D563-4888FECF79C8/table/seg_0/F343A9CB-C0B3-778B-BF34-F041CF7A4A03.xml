@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F343A9CB-C0B3-778B-BF34-F041CF7A4A03" schemaObject="1BFD44C5-87D9-79C1-586D-D17460850C8D" name="JSYB_BG_LOC_MEMO_DEVOLUCION_TL">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F343A9CB-C0B3-778B-BF34-F041CF7A4A03" schemaObject="1BFD44C5-87D9-79C1-586D-D17460850C8D" name="JSYB_BG_LOD_MEMO_DEVOLUCION_TL">
 <createdBy>carayar</createdBy>
 <createdTime>2018-12-13 13:37:57 UTC</createdTime>
 <ownerDesignName>Modelo de Datos</ownerDesignName>
@@ -34,7 +34,20 @@
 <colAssociation fkAssociation="32F4755C-A600-37E4-6A0A-FC58E2956036" referredColumn="E9025A6A-5930-39DB-8635-7F41E912FE89"/>
 </associations>
 </Column>
-<Column name="LO_CODIGO" id="E2F7764F-A326-2AA1-AF1D-43E7186F1550">
+<Column name="ORG_ID_INV" id="82A8B434-0106-223D-9257-CA593AE8F6A6">
+<createdBy>QonnyMoffo</createdBy>
+<createdTime>2018-12-20 20:43:22 UTC</createdTime>
+<ownerDesignName>Modelo de Datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="32F4755C-A600-37E4-6A0A-FC58E2956036" referredColumn="486912FC-5014-99A4-9368-EFECFACE7FDB"/>
+</associations>
+</Column>
+<Column name="INVENTORY_ITEM_ID" id="9584CCC8-FB65-55BB-E22E-4479CCD5F758">
 <createdBy>carayar</createdBy>
 <createdTime>2018-12-13 13:40:30 UTC</createdTime>
 <ownerDesignName>Modelo de Datos</ownerDesignName>
@@ -43,19 +56,8 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="COD_PRODUCTO" id="9584CCC8-FB65-55BB-E22E-4479CCD5F758">
-<createdBy>carayar</createdBy>
-<createdTime>2018-12-13 13:40:30 UTC</createdTime>
-<ownerDesignName>Modelo de Datos</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>40 BYTE</dataTypeSize>
-<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="32F4755C-A600-37E4-6A0A-FC58E2956036" referredColumn="AD152CEC-8343-A3A7-3310-A5D593126A27"/>
+<colAssociation fkAssociation="32F4755C-A600-37E4-6A0A-FC58E2956036" referredColumn="32A46292-EE7B-980C-C117-6F1D08CBBE48"/>
 </associations>
 </Column>
 <Column name="CODIGO_LOTE" id="58C93D83-EB3E-EA93-7137-8F08861F6142">
@@ -66,11 +68,21 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>40 BYTE</dataTypeSize>
-<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="32F4755C-A600-37E4-6A0A-FC58E2956036" referredColumn="DBB37DEB-9F67-612D-F1EA-D8D3E828F982"/>
 </associations>
+</Column>
+<Column name="LO_CODIGO" id="E2F7764F-A326-2AA1-AF1D-43E7186F1550">
+<createdBy>carayar</createdBy>
+<createdTime>2018-12-13 13:40:30 UTC</createdTime>
+<ownerDesignName>Modelo de Datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="CANTIDAD_MAX" id="D490AEF9-5431-A37F-5D7A-555C9FE5A28D">
 <createdBy>carayar</createdBy>
@@ -85,7 +97,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="067208B3-2314-2B54-5D83-C9808090F656" name="JSYB_BG_LOC_MEMO_DEVOLUCION_PK">
+<ind_PK_UK id="067208B3-2314-2B54-5D83-C9808090F656" name="JSYB_BG_LOD_MEMO_DEVOLUCION_PK">
 <createdBy>carayar</createdBy>
 <createdTime>2018-12-13 13:40:30 UTC</createdTime>
 <ownerDesignName>Modelo de Datos</ownerDesignName>
@@ -94,12 +106,13 @@
 <indexColumnUsage>
 <colUsage columnID="65614BE7-B674-BACF-D888-01E63562C6D0"/>
 <colUsage columnID="635BC6BE-31BE-2D83-07B6-4688E96B2355"/>
-<colUsage columnID="E2F7764F-A326-2AA1-AF1D-43E7186F1550"/>
+<colUsage columnID="82A8B434-0106-223D-9257-CA593AE8F6A6"/>
 <colUsage columnID="9584CCC8-FB65-55BB-E22E-4479CCD5F758"/>
 <colUsage columnID="58C93D83-EB3E-EA93-7137-8F08861F6142"/>
+<colUsage columnID="E2F7764F-A326-2AA1-AF1D-43E7186F1550"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="0935EF37-CE30-8CFD-7918-56F504093524" name="JSYB_BG_DET_LOC_MEMO_DEVOL_FK">
+<ind_PK_UK id="0935EF37-CE30-8CFD-7918-56F504093524" name="JSYB_BG_DET_LOD_MEMO_DEVOL_FK">
 <createdBy>carayar</createdBy>
 <createdTime>2018-12-13 14:13:31 UTC</createdTime>
 <ownerDesignName>Modelo de Datos</ownerDesignName>
@@ -108,6 +121,7 @@
 <indexColumnUsage>
 <colUsage columnID="65614BE7-B674-BACF-D888-01E63562C6D0"/>
 <colUsage columnID="635BC6BE-31BE-2D83-07B6-4688E96B2355"/>
+<colUsage columnID="82A8B434-0106-223D-9257-CA593AE8F6A6"/>
 <colUsage columnID="9584CCC8-FB65-55BB-E22E-4479CCD5F758"/>
 <colUsage columnID="58C93D83-EB3E-EA93-7137-8F08861F6142"/>
 </indexColumnUsage>

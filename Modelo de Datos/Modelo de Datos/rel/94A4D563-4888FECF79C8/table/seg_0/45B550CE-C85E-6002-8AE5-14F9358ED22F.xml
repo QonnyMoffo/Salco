@@ -84,6 +84,16 @@
 <colAssociation fkAssociation="4545CB7A-782C-6ED7-DBCD-7D5E3D8002DE" referredColumn="2E3E6C4D-F690-E462-5FDA-70646630745C"/>
 </associations>
 </Column>
+<Column name="ORG_ID_INV" id="486912FC-5014-99A4-9368-EFECFACE7FDB">
+<createdBy>QonnyMoffo</createdBy>
+<createdTime>2018-12-20 20:40:10 UTC</createdTime>
+<ownerDesignName>Modelo de Datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="CODIGO_LOTE" id="DBB37DEB-9F67-612D-F1EA-D8D3E828F982">
 <createdBy>carayar</createdBy>
 <createdTime>2018-12-12 23:54:35 UTC</createdTime>
@@ -118,7 +128,8 @@
 <indexColumnUsage>
 <colUsage columnID="75FC6A6E-8F73-3811-A9C2-282F52DFD79C"/>
 <colUsage columnID="E9025A6A-5930-39DB-8635-7F41E912FE89"/>
-<colUsage columnID="AD152CEC-8343-A3A7-3310-A5D593126A27"/>
+<colUsage columnID="486912FC-5014-99A4-9368-EFECFACE7FDB"/>
+<colUsage columnID="32A46292-EE7B-980C-C117-6F1D08CBBE48"/>
 <colUsage columnID="DBB37DEB-9F67-612D-F1EA-D8D3E828F982"/>
 </indexColumnUsage>
 </ind_PK_UK>
