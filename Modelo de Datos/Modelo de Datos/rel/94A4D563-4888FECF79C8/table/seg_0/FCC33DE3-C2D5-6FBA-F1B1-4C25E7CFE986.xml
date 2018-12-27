@@ -127,7 +127,6 @@
 <createdBy>carayar</createdBy>
 <createdTime>2018-12-12 23:53:32 UTC</createdTime>
 <ownerDesignName>Modelo de Datos</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>

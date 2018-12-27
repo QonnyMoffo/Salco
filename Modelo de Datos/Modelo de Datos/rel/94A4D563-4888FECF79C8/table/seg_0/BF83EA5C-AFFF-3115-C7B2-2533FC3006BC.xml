@@ -83,28 +83,6 @@
 <ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DESDE" id="752AB63B-15B2-99C9-0B2F-31C1B1F1D554">
-<createdBy>carayar</createdBy>
-<createdTime>2018-12-13 13:42:20 UTC</createdTime>
-<ownerDesignName>Modelo de Datos</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="HASTA" id="36C7AFA9-290E-AB66-1896-68A050B8C814">
-<createdBy>carayar</createdBy>
-<createdTime>2018-12-13 13:42:20 UTC</createdTime>
-<ownerDesignName>Modelo de Datos</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="REASON_ID" id="AFF00456-8902-063D-88E9-81937D7F2E19">
 <createdBy>carayar</createdBy>
 <createdTime>2018-12-13 13:42:20 UTC</createdTime>

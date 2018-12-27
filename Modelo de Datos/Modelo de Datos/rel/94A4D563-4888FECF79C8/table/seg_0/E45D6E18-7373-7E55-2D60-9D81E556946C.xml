@@ -38,6 +38,7 @@
 <createdBy>QonnyMoffo</createdBy>
 <createdTime>2018-12-26 15:26:00 UTC</createdTime>
 <ownerDesignName>Modelo de Datos</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -69,7 +70,7 @@
 <colUsage columnID="8D3AD866-F550-38D1-B182-417B6F44AA9F"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="BFEDD4E7-5E74-4B25-1D10-1BDD228B96B6" name="JSYB_BG_ENC_LOC_SOLICITUD_MEMO_FK">
+<ind_PK_UK id="BFEDD4E7-5E74-4B25-1D10-1BDD228B96B6" name="JSYB_BG_ENC_LOC_SOL_MEMO_FK">
 <createdBy>QonnyMoffo</createdBy>
 <createdTime>2018-12-26 15:32:32 UTC</createdTime>
 <ownerDesignName>Modelo de Datos</ownerDesignName>

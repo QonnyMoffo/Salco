@@ -70,7 +70,7 @@
 <colUsage columnID="2988FADF-37F6-C019-9876-00B140F1F634"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="6F5F6603-0F6A-D9C0-D0B6-BC043E65B92E" name="JSYB_BG_ENC_LOC_MEMO_DEVOLUCION_FK">
+<ind_PK_UK id="6F5F6603-0F6A-D9C0-D0B6-BC043E65B92E" name="JSYB_BG_ENC_LOC_MEMO_DEVOL_FK">
 <createdBy>QonnyMoffo</createdBy>
 <createdTime>2018-12-26 15:38:31 UTC</createdTime>
 <ownerDesignName>Modelo de Datos</ownerDesignName>

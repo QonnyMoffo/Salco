@@ -61,20 +61,6 @@
 <colAssociation fkAssociation="A6B723DD-A4DC-DBF5-689B-9C3C32AEF9D5" referredColumn="D4B6B716-C492-9ED1-AE71-16681C37E524"/>
 </associations>
 </Column>
-<Column name="CODIGO_LOTE" id="B74D4D20-62C3-4FDB-5B01-869FF6045CD6">
-<createdBy>carayar</createdBy>
-<createdTime>2018-12-13 14:05:10 UTC</createdTime>
-<ownerDesignName>Modelo de Datos</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>40 BYTE</dataTypeSize>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="A6B723DD-A4DC-DBF5-689B-9C3C32AEF9D5" referredColumn="D67B0F93-43E6-A905-49E0-1384566D91F8"/>
-</associations>
-</Column>
 <Column name="LO_CODIGO" id="42C8F2E2-1788-DFF8-1362-287FA9C2F5F1">
 <createdBy>carayar</createdBy>
 <createdTime>2018-12-13 14:05:10 UTC</createdTime>
@@ -110,11 +96,10 @@
 <colUsage columnID="7584B760-8C2B-C7CB-DF15-E615B7867444"/>
 <colUsage columnID="73FCE4F6-4F21-0D14-C885-B4C19E1D0198"/>
 <colUsage columnID="0356896B-9EA3-4745-8678-CF55676F7686"/>
-<colUsage columnID="B74D4D20-62C3-4FDB-5B01-869FF6045CD6"/>
 <colUsage columnID="42C8F2E2-1788-DFF8-1362-287FA9C2F5F1"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="CDADD6E0-D0E5-D3FD-40FD-E654A7FE1A7B" name="JSYB_BG_DET_LOD_SOLICITUD_MEMO_FK">
+<ind_PK_UK id="CDADD6E0-D0E5-D3FD-40FD-E654A7FE1A7B" name="JSYB_BG_DET_LOD_SOL_MEMO_FK">
 <createdBy>QonnyMoffo</createdBy>
 <createdTime>2018-12-26 15:30:58 UTC</createdTime>
 <ownerDesignName>Modelo de Datos</ownerDesignName>
@@ -125,7 +110,6 @@
 <colUsage columnID="7584B760-8C2B-C7CB-DF15-E615B7867444"/>
 <colUsage columnID="73FCE4F6-4F21-0D14-C885-B4C19E1D0198"/>
 <colUsage columnID="0356896B-9EA3-4745-8678-CF55676F7686"/>
-<colUsage columnID="B74D4D20-62C3-4FDB-5B01-869FF6045CD6"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
