@@ -64,7 +64,6 @@
 <createdBy>carayar</createdBy>
 <createdTime>2018-12-13 13:40:30 UTC</createdTime>
 <ownerDesignName>Modelo de Datos</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -84,11 +83,12 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="067208B3-2314-2B54-5D83-C9808090F656" name="JSYB_BG_LOD_MEMO_DEVOLUCION_PK">
-<createdBy>carayar</createdBy>
-<createdTime>2018-12-13 13:40:30 UTC</createdTime>
+<ind_PK_UK id="ECF1E7C6-2849-0BD8-FB98-1FFFCF3740B7" name="JSYB_BG_LOD_MEMO_DEVOLUCION_PK">
+<createdBy>QonnyMoffo</createdBy>
+<createdTime>2018-12-28 17:10:37 UTC</createdTime>
 <ownerDesignName>Modelo de Datos</ownerDesignName>
-<indexState>Unique Constraint</indexState>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="65614BE7-B674-BACF-D888-01E63562C6D0"/>

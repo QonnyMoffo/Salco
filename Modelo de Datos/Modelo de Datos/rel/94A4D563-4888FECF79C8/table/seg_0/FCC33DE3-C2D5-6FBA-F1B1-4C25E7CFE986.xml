@@ -148,6 +148,17 @@
 <colAssociation fkAssociation="2320942E-9077-4F96-644A-5894929B3438" referredColumn="1D7DAAA6-52C3-0425-D546-377BEDC751BD"/>
 </associations>
 </Column>
+<Column name="CANTIDAD_MAX" id="3127E58E-E2B6-0CE3-78D6-CE459AC8FED7">
+<createdBy>QonnyMoffo</createdBy>
+<createdTime>2018-12-28 17:07:37 UTC</createdTime>
+<ownerDesignName>Modelo de Datos</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="USUARIO_REGISTRO" id="A392A8AE-A2A0-FAC6-8D6C-2CC6A448BFA8">
 <createdBy>QonnyMoffo</createdBy>
 <createdTime>2018-12-17 15:14:19 UTC</createdTime>
